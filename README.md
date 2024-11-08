@@ -1,6 +1,3 @@
-Here's a README for **The Nairobi Hospital Website** project:
-
----
 
 # The Nairobi Hospital Website
 <div align="center">
