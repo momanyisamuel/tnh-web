@@ -36,6 +36,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sanity/client": "^5.4.2",
+		"lucide-svelte": "^0.455.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-is": "^18.2.0",
