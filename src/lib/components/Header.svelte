@@ -32,7 +32,7 @@
                         <ChevronDown/>
                     </span>
                 </a>
-                <ul class="absolute text-gray-700 bg-white border rounded shadow-md dropdown-menu top-8 w-[300px]">
+                <ul class="absolute text-gray-700 hidden bg-white border rounded shadow-md dropdown-menu w-[300px]">
                     <li class=""><a class="block px-4 py-2 whitespace-no-wrap bg-white  hover:bg-[#D8DFE1]" href="#">One</a></li>
                     <li class=""><a class="block px-4 py-2 whitespace-no-wrap bg-white hover:bg-[#D8DFE1]" href="#">Two</a></li>
                     <li class=""><a class="block px-4 py-2 whitespace-no-wrap bg-white rounded-b hover:bg-[#D8DFE1]" href="#">Three is the magic number</a></li>
