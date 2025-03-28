@@ -1,13 +1,22 @@
-import { FC } from 'react'
-import { Link } from 'react-router'
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+import { FC } from "react";
+import { Link } from "react-router";
 
-type AboutProps = object
+type AboutProps = object;
 
 const About: FC<AboutProps> = () => {
-  return (<div>
-    <Link to="/">Home</Link>
-    About
-    </div>)
-}
+  return (
+    <>
+      <Header />
+      <div>
+        <Link to="/">Home</Link>
+        About
+      </div>
 
-export default About
+      <Footer />
+    </>
+  );
+};
+
+export default About;

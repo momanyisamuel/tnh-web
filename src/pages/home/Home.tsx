@@ -1,13 +1,26 @@
-import { FC } from 'react'
-import { Link } from 'react-router'
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+//import Header from '../../components/header'
+import { FC } from "react";
+import { Link } from "react-router";
+import Hero from "./hero";
+import Services from "./clinical-services";
 
-type HomeProps = object
+type HomeProps = object;
 
 const Home: FC<HomeProps> = () => {
-  return <div>
-    <Link to="/about">About</Link>
-    Home
-    </div>
-}
+  return (
+    <>
+      <Header />
+      {/* <div>
+        <Link to="/about">About</Link>
+        Home
+      </div> */}
+      <Hero />
+      <Services />
+      <Footer />
+    </>
+  );
+};
 
-export default Home
+export default Home;
