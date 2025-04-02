@@ -5,6 +5,8 @@ import { FC } from "react";
 import { Link } from "react-router";
 import Hero from "./hero";
 import Services from "./clinical-services";
+import Opc from "./opc";
+import Ourpatners from "./ourpatners";
 
 type HomeProps = object;
 
@@ -18,6 +20,8 @@ const Home: FC<HomeProps> = () => {
       </div> */}
       <Hero />
       <Services />
+      <Opc />
+      <Ourpatners />
       <Footer />
     </>
   );

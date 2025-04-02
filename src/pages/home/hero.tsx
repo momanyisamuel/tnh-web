@@ -6,7 +6,7 @@ import care4 from "@/assets/images/image4.jpg";
 
 const Hero = () => {
   return (
-    <section className="bg-red-900 text-white p-8 md:p-16 rounded-2xl mx-[5%] w-auto">
+    <section className="bg-red-900 text-white p-5 md:p-16 rounded-2xl mx-[5%] w-auto">
       <div className="grid md:grid-cols-2 gap-6">
         {/* Text Content */}
         <div className="flex flex-col justify-center space-y-4">
