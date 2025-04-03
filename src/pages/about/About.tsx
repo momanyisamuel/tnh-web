@@ -13,7 +13,6 @@ const About: FC<AboutProps> = () => {
         <Link to="/">Home</Link>
         About
       </div>
-
       <Footer />
     </>
   );

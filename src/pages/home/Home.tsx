@@ -14,10 +14,11 @@ const Home: FC<HomeProps> = () => {
   return (
     <>
       <Header />
-      {/* <div>
+      <div>
         <Link to="/about">About</Link>
         Home
-      </div> */}
+        <Link to="/clinics">clinics</Link>
+      </div>
       <Hero />
       <Services />
       <Opc />

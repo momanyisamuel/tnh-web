@@ -1,60 +1,76 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import logo from "@/assets/static/tnh_logo.svg";
+import MenuList, { MenuListType } from "./menu/menu-list";
 
 const menuItems = [
   { name: "Home", link: "/" },
   {
-    name: "About Us",
+    item: {name: "About Us", link: "/"},
     dropdown: [
-      ["Pharmacy Services", "Laboratory Services", "Radiology Services"],
-      ["Dental Procedures", "Gynaecology", "Antenatal Clinic"],
+      { name: "About Us", link: "/about" },
+      { name: "Board of Management", link: "/board-of-management" },
+      { name: "Board of Trustees", link: "/board-of-trustees" },
+      { name: "Senior Management Team", link: "/senior-management" },
+      { name: "Accreditation and Certifications", link: "/accreditation" },
     ],
   },
-  {
-    name: "Patients & Visitors",
-    dropdown: [
-      ["Patient Guidelines", "Visiting Hours", "Billing Information"],
-      ["Insurance Partners", "Medical Records", "Patient Rights"],
-    ],
-  },
-  {
-    name: "Clinical Services",
-    dropdown: [
-      ["Emergency Services", "Outpatient Services", "Surgical Procedures"],
-      ["Pediatrics", "Internal Medicine", "Maternity Services"],
-    ],
-  },
-  {
-    name: "College of Health Sciences",
-    dropdown: [
-      ["About the college", "Basic Departments", "Post Basic Department"],
-      ["Student Sponsorship", "Facilities and Downloads", "Alumni", "FAQs"],
-    ],
-  },
-  { name: "Contact us", link: "/careers" },
-];
+] as MenuListType[];
+
+// {
+//   name: "Patients & Visitors",
+//   dropdown: [
+//     { name: "Patient Guidelines", link: "/patient-guidelines" },
+//     { name: "Visiting Hours", link: "/visiting-hours" },
+//     { name: "Billing Information", link: "/billing-info" },
+//     { name: "Insurance Partners", link: "/insurance-partners" },
+//     { name: "Medical Records", link: "/medical-records" },
+//     { name: "Patient Rights", link: "/patient-rights" },
+//   ],
+// },
+// {
+//   name: "Clinical Services",
+//   dropdown: [
+//     { name: "Emergency Services", link: "/emergency-services" },
+//     { name: "Outpatient Services", link: "/outpatient-services" },
+//     { name: "Surgical Procedures", link: "/surgical-procedures" },
+//     { name: "Pediatrics", link: "/pediatrics" },
+//     { name: "Internal Medicine", link: "/internal-medicine" },
+//     { name: "Maternity Services", link: "/maternity-services" },
+//   ],
+// },
+// {
+//   name: "College of Health Sciences",
+//   dropdown: [
+//     { name: "About the College", link: "/about-college" },
+//     { name: "Basic Departments", link: "/basic-departments" },
+//     { name: "Post Basic Department", link: "/post-basic-department" },
+//     { name: "Student Sponsorship", link: "/student-sponsorship" },
+//     { name: "Facilities and Downloads", link: "/facilities-downloads" },
+//     { name: "Alumni", link: "/alumni" },
+//     { name: "FAQs", link: "/faqs" },
+//   ],
+// },
+// { name: "Contact Us", link: "/contact-us" },
 
 const Header: React.FC = () => {
-  const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
-  const dropdownRef = useRef<HTMLDivElement | null>(null);
 
-  const handleClickOutside = (event: MouseEvent) => {
-    if (
-      dropdownRef.current &&
-      !dropdownRef.current.contains(event.target as Node)
-    ) {
-      setOpenMenu(null);
-    }
-  };
+  // const handleClickOutside = (event: MouseEvent) => {
+  //   if (
+  //     dropdownRef.current &&
+  //     !dropdownRef.current.contains(event.target as Node)
+  //   ) {
+  //     setOpenMenu(null);
+  //   }
+  // };
 
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  // useEffect(() => {
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, []);
 
   return (
     <nav className="bg-white mx-[5%] text-black px-6 py-3 flex justify-between items-center relative">
@@ -90,48 +106,7 @@ const Header: React.FC = () => {
             <X size={24} />
           </button>
         </div>
-
-        <ul className="flex flex-col lg:flex-row lg:gap-8 p-6 lg:p-0">
-          {menuItems.map((item) => (
-            <li
-              key={item.name}
-              className="relative py-2.5 font-semibold text-black"
-            >
-              {item.dropdown ? (
-                <button
-                  onClick={() =>
-                    setOpenMenu(openMenu === item.name ? null : item.name)
-                  }
-                  className="flex items-center px-4 py-2 hover:bg-red-900 hover:rounded-xl hover:text-white w-full lg:w-auto"
-                >
-                  {item.name} <ChevronDown className="w-4 h-4 ml-2" />
-                </button>
-              ) : (
-                <a
-                  href={item.link}
-                  className="block px-4 py-2 hover:bg-red-900 hover:rounded-xl hover:text-white"
-                >
-                  {item.name}
-                </a>
-              )}
-              {item.dropdown && openMenu === item.name && (
-                <div
-                  ref={dropdownRef}
-                  className="absolute left-0 top-full bg-white text-black shadow-lg p-4 grid gap-2 w-64"
-                >
-                  {item.dropdown.flat().map((subItem) => (
-                    <div
-                      key={subItem}
-                      className="p-2 rounded-lg hover:bg-yellow-600 hover:text-white"
-                    >
-                      {subItem}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </li>
-          ))}
-        </ul>
+        <MenuList items={menuItems} />
       </div>
     </nav>
   );

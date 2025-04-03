@@ -1,10 +1,10 @@
-import { lazyLoad } from '@/components/layout/lazy-load';
+import { lazyLoad } from "@/components/layout/lazy-load";
 
 export type UIRoutesType = {
-	name: string;
-	path: string;
-	component: React.FC;
-	children?: UIRoutesType[];
+  name: string;
+  path: string;
+  component: React.FC;
+  children?: UIRoutesType[];
 };
 
 /**
@@ -12,16 +12,21 @@ export type UIRoutesType = {
  * @type {Record<keyof typeof UIRoutes, UIRoutesType>}
  */
 const UIRoutes = {
-	home: {
-		name: 'navigation.home',
-		path: '/',
-		component: lazyLoad(() => import('../pages/home/Home')),
-	},
-	about: {
-		name: 'navigation.about',
-		path: '/about',
-		component: lazyLoad(() => import('../pages/about/About')),
-	},
+  home: {
+    name: "navigation.home",
+    path: "/",
+    component: lazyLoad(() => import("../pages/home/Home")),
+  },
+  about: {
+    name: "navigation.about",
+    path: "/about",
+    component: lazyLoad(() => import("../pages/about/About")),
+  },
+  clinics: {
+    name: "navigation.clinics",
+    path: "/clinics",
+    component: lazyLoad(() => import("../pages/clinics/Clinics")),
+  },
 };
 
 export const RoutesPath: Record<keyof typeof UIRoutes, UIRoutesType> = UIRoutes;
