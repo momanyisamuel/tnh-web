@@ -1,10 +1,15 @@
-import React from "react";
-import { Link } from "react-router";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+import ServicesBrief from "./ServicesBrief";
+import ServiceCards from "./ServicesCards";
 
 const Clinics = () => {
   return (
     <div>
-      <Link to="/">Go back Home</Link> HI from Clinics page
+      <Header />
+      <ServicesBrief />
+      <ServiceCards />
+      <Footer />
     </div>
   );
 };
