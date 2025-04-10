@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import dentist from "@/assets/images/dentist.jpg";
 import pharmacy from "@/assets/images/Pharmacy.jpg";
 import antenatal from "@/assets/images/antenatal.jpg";
@@ -59,18 +59,76 @@ const clinicalServices = [
     description:
       "Pharmacies offer health-related services like vaccinations, wellness check-ups, and over-the-counter medications. It is managed by licensed pharmacists who provide prescriptions, medical advice, and information on drug interactions.",
   },
+  {
+    image: {
+      src: [antenatal],
+      alt: "card-image",
+    },
+    name: "Antenatal Clinic",
+    description:
+      "The Antenatal Clinic is administered by Obstetricians/Gynecologists and experienced midwives who provide comprehensive care to mothers from conception, all through pregnancy until delivery.",
+  },
+  {
+    image: {
+      src: [gyne],
+      alt: "card-image",
+    },
+    name: "Gynaecology",
+    description:
+      "Gynaecology focuses on women's reproductive health, offering services like screenings, pregnancy care, and hormonal treatments. It is practiced by licensed gynecologists who diagnose, prevent, and treat conditions related to the female",
+  },
+  {
+    image: {
+      src: [pharmacy],
+      alt: "card-image",
+    },
+    name: "Pharmacy",
+    description:
+      "Pharmacies offer health-related services like vaccinations, wellness check-ups, and over-the-counter medications. It is managed by licensed pharmacists who provide prescriptions, medical advice, and information on drug interactions.",
+  },
+  {
+    image: {
+      src: [antenatal],
+      alt: "card-image",
+    },
+    name: "Antenatal Clinic",
+    description:
+      "The Antenatal Clinic is administered by Obstetricians/Gynecologists and experienced midwives who provide comprehensive care to mothers from conception, all through pregnancy until delivery.",
+  },
+  {
+    image: {
+      src: [gyne],
+      alt: "card-image",
+    },
+    name: "Gynaecology",
+    description:
+      "Gynaecology focuses on women's reproductive health, offering services like screenings, pregnancy care, and hormonal treatments. It is practiced by licensed gynecologists who diagnose, prevent, and treat conditions related to the female",
+  },
+  {
+    image: {
+      src: [dentist],
+      alt: "card-image",
+    },
+    name: "Dentistry",
+    description:
+      "Dentistry focuses on oral health, offering services like cleanings, cavity treatments, and dental surgeries. It is practiced by licensed dentists who diagnose, prevent, and treat issues related to teeth, gums, and the mouth.",
+  },
 ];
 // Cardtitles
 const ServiceCards = () => {
+  const [VisibleServices, setVisibleServices] = useState(8);
+  const handleLoadMore = () => {
+    setVisibleServices((prev) => prev + 4);
+  };
   return (
-    <div className="flex flex-col items-center bg-gray-200 py-10 justify-center mt-8">
+    <div className="flex flex-col items-center bg-gray-100 py-10 justify-center mt-8">
       {/* <h1 className="font-bold text-4xl my-10">Clinical Services</h1> */}
 
-      <div className="flex flex-wrap items-center px-[5%] gap-6 justify-center">
-        {clinicalServices.map((item) => (
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-[5%] gap-6 justify-center">
+        {clinicalServices.slice(0,VisibleServices).map((item) => (
           <div
             key={item.name}
-            className="max-w-sm bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-2xl border-yellow-00 border-y-yellow-600"
+            className="max-w-xl bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-2xl border-yellow-00 border-y-yellow-600"
           >
             <img
               className="rounded-t-lg w-full h-56 object-cover"
@@ -113,6 +171,14 @@ const ServiceCards = () => {
           </div>
         ))}
       </div>
+      {clinicalServices.length > VisibleServices && (
+        <button
+          onClick={handleLoadMore}
+          className="mt-4 px-4 py-2 text-white bg-yellow-600 rounded-lg hover:bg-red-900"
+        >
+          More Services
+        </button>
+      )}
     </div>
   );
 };

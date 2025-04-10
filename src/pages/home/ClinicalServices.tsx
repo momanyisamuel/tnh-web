@@ -3,6 +3,7 @@ import dentist from "@/assets/images/dentist.jpg";
 import pharmacy from "@/assets/images/Pharmacy.jpg";
 import antenatal from "@/assets/images/antenatal.jpg";
 import gyne from "@/assets/images/gynecology.jpg";
+import { Link } from "react-router";
 
 const clinicalServices = [
   {
@@ -25,13 +26,31 @@ const clinicalServices = [
   },
   {
     image: {
+      src: [antenatal],
+      alt: "card-image",
+    },
+    name: "Antenatal Clinic",
+    description:
+      "The Antenatal Clinic is administered by Obstetricians/Gynecologists and experienced midwives who provide comprehensive care to mothers from conception, all through pregnancy until delivery.",
+  },
+  {
+    image: {
       src: [gyne],
       alt: "card-image",
     },
-    name: "Gynaecology",
+    name: "Gynecology",
     description:
-      "Gynaecology focuses on women's reproductive health, offering services like screenings, pregnancy care, and hormonal treatments. It is practiced by licensed gynecologists who diagnose, prevent, and treat conditions related to the female",
-  },
+      "The Antenatal Clinic is administered by Obstetricians/Gynecologists and experienced midwives who provide comprehensive care to mothers from conception, all through pregnancy until delivery.",
+  }, {
+    image: {
+      src: [antenatal],
+      alt: "card-image",
+    },
+    name: "Antenatal Clinic",
+    description:
+      "The Antenatal Clinic is administered by Obstetricians/Gynecologists and experienced midwives who provide comprehensive care to mothers from conception, all through pregnancy until delivery.",
+  }, 
+
   {
     image: {
       src: [antenatal],
@@ -41,15 +60,17 @@ const clinicalServices = [
     description:
       "The Antenatal Clinic is administered by Obstetricians/Gynecologists and experienced midwives who provide comprehensive care to mothers from conception, all through pregnancy until delivery.",
   },
+
 ];
 // Cardtitles
 const Services = () => {
+  const servicesToShow = clinicalServices.slice(0, 4);
   return (
     <div className="flex flex-col items-center justify-center mt-8">
       <h1 className="font-bold text-4xl my-10">Clinical Services</h1>
 
       <div className="flex flex-wrap items-center px-[5%] gap-6 justify-center">
-        {clinicalServices.map((item) => (
+        {servicesToShow.map((item) => (
           <div
             key={item.name}
             className="max-w-sm bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-2xl border-yellow-00 border-y-yellow-600"
@@ -95,6 +116,13 @@ const Services = () => {
           </div>
         ))}
       </div>
+      {clinicalServices.length > 4 && (
+        <Link
+          to="/clinics"
+          className="mt-8 inline-flex items-center px-6 py-3 text-white bg-yellow-600 rounded-lg hover:bg-red-900 text-lg font-semibold transition"
+        >
+          See more clinics
+        </Link>)}
     </div>
   );
 };
