@@ -9,7 +9,7 @@ const About: FC<AboutProps> = () => {
   return (
     <>
       <Header />
-      <NavigationTabs />
+      {/* <NavigationTabs /> */}
       <Footer />
     </>
   );

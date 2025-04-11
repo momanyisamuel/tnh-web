@@ -3,11 +3,21 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/static/tnh_logo.svg";
 //import MenuComponent from "./Menu";
 import MenuComponent from "./menu/Menu";
+
 const menuItems = [
   { name: "Home", link: "/" },
   {
     name: "About Us",
-    link: "/about",
+    dropdown: [
+      [
+        "About Us",
+        "History",
+        "Board of Management",
+        "Board of Trustees",
+        "Senior Management team",
+        "Accreditation & Certification",
+      ],
+    ],
   },
   {
     name: "Patients & Visitors",

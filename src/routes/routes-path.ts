@@ -27,6 +27,11 @@ const UIRoutes = {
     path: "/clinics",
     component: lazyLoad(() => import("../pages/clinics/Clinics")),
   },
+  serviceDetails: {
+    name: "navigation.serviceDetails",
+    path: "/service-detail/:id",
+    component: lazyLoad(() => import("../pages/clinics/ServiceDetails")),
+  },
 };
 
 export const RoutesPath: Record<keyof typeof UIRoutes, UIRoutesType> = UIRoutes;

@@ -3,120 +3,12 @@ import dentist from "@/assets/images/dentist.jpg";
 import pharmacy from "@/assets/images/Pharmacy.jpg";
 import antenatal from "@/assets/images/antenatal.jpg";
 import gyne from "@/assets/images/gynecology.jpg";
+import { Link } from "react-router";
+import clinicalServices from "@/data/clinicalServices.json";
 
-const clinicalServices = [
-  {
-    image: {
-      src: [dentist],
-      alt: "card-image",
-    },
-    name: "Dentistry",
-    description:
-      "Dentistry focuses on oral health, offering services like cleanings, cavity treatments, and dental surgeries. It is practiced by licensed dentists who diagnose, prevent, and treat issues related to teeth, gums, and the mouth.",
-  },
-  {
-    image: {
-      src: [pharmacy],
-      alt: "card-image",
-    },
-    name: "Pharmacy",
-    description:
-      "Pharmacies offer health-related services like vaccinations, wellness check-ups, and over-the-counter medications. It is managed by licensed pharmacists who provide prescriptions, medical advice, and information on drug interactions.",
-  },
-  {
-    image: {
-      src: [gyne],
-      alt: "card-image",
-    },
-    name: "Gynaecology",
-    description:
-      "Gynaecology focuses on women's reproductive health, offering services like screenings, pregnancy care, and hormonal treatments. It is practiced by licensed gynecologists who diagnose, prevent, and treat conditions related to the female",
-  },
-  {
-    image: {
-      src: [antenatal],
-      alt: "card-image",
-    },
-    name: "Antenatal Clinic",
-    description:
-      "The Antenatal Clinic is administered by Obstetricians/Gynecologists and experienced midwives who provide comprehensive care to mothers from conception, all through pregnancy until delivery.",
-  },
-  {
-    image: {
-      src: [antenatal],
-      alt: "card-image",
-    },
-    name: "Antenatal Clinic",
-    description:
-      "The Antenatal Clinic is administered by Obstetricians/Gynecologists and experienced midwives who provide comprehensive care to mothers from conception, all through pregnancy until delivery.",
-  },
-  {
-    image: {
-      src: [pharmacy],
-      alt: "card-image",
-    },
-    name: "Pharmacy",
-    description:
-      "Pharmacies offer health-related services like vaccinations, wellness check-ups, and over-the-counter medications. It is managed by licensed pharmacists who provide prescriptions, medical advice, and information on drug interactions.",
-  },
-  {
-    image: {
-      src: [antenatal],
-      alt: "card-image",
-    },
-    name: "Antenatal Clinic",
-    description:
-      "The Antenatal Clinic is administered by Obstetricians/Gynecologists and experienced midwives who provide comprehensive care to mothers from conception, all through pregnancy until delivery.",
-  },
-  {
-    image: {
-      src: [gyne],
-      alt: "card-image",
-    },
-    name: "Gynaecology",
-    description:
-      "Gynaecology focuses on women's reproductive health, offering services like screenings, pregnancy care, and hormonal treatments. It is practiced by licensed gynecologists who diagnose, prevent, and treat conditions related to the female",
-  },
-  {
-    image: {
-      src: [pharmacy],
-      alt: "card-image",
-    },
-    name: "Pharmacy",
-    description:
-      "Pharmacies offer health-related services like vaccinations, wellness check-ups, and over-the-counter medications. It is managed by licensed pharmacists who provide prescriptions, medical advice, and information on drug interactions.",
-  },
-  {
-    image: {
-      src: [antenatal],
-      alt: "card-image",
-    },
-    name: "Antenatal Clinic",
-    description:
-      "The Antenatal Clinic is administered by Obstetricians/Gynecologists and experienced midwives who provide comprehensive care to mothers from conception, all through pregnancy until delivery.",
-  },
-  {
-    image: {
-      src: [gyne],
-      alt: "card-image",
-    },
-    name: "Gynaecology",
-    description:
-      "Gynaecology focuses on women's reproductive health, offering services like screenings, pregnancy care, and hormonal treatments. It is practiced by licensed gynecologists who diagnose, prevent, and treat conditions related to the female",
-  },
-  {
-    image: {
-      src: [dentist],
-      alt: "card-image",
-    },
-    name: "Dentistry",
-    description:
-      "Dentistry focuses on oral health, offering services like cleanings, cavity treatments, and dental surgeries. It is practiced by licensed dentists who diagnose, prevent, and treat issues related to teeth, gums, and the mouth.",
-  },
-];
 // Cardtitles
 const ServiceCards = () => {
-  const [VisibleServices, setVisibleServices] = useState(8);
+  const [VisibleServices, setVisibleServices] = useState(4);
   const handleLoadMore = () => {
     setVisibleServices((prev) => prev + 4);
   };
@@ -125,7 +17,7 @@ const ServiceCards = () => {
       {/* <h1 className="font-bold text-4xl my-10">Clinical Services</h1> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-[5%] gap-6 justify-center">
-        {clinicalServices.slice(0,VisibleServices).map((item) => (
+        {clinicalServices.slice(0, VisibleServices).map((item) => (
           <div
             key={item.name}
             className="max-w-xl bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-2xl border-yellow-00 border-y-yellow-600"
@@ -146,8 +38,8 @@ const ServiceCards = () => {
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 {item.description}
               </p>
-              <a
-                href="#"
+              <Link
+                to={`/service-detail/${item.id}`}
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-600 dark:bg-red-900 dark:hover:bg-red-900 dark:focus:ring-red-800 bg-red-900 shadow-lg shadow-red-900/50 "
               >
                 Read more
@@ -166,7 +58,7 @@ const ServiceCards = () => {
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         ))}
