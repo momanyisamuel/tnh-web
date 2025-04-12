@@ -2,7 +2,10 @@ import React from "react";
 import MenuItem from "./MenuItem";
 
 interface MenuProps {
-  menuItems: { name: string; link?: string; dropdown?: string[][] }[];
+  menuItems: { name: string; 
+              link?: string; 
+              dropdown?: { name: string; link: string } [][];
+            }[];
 }
 
 const MenuComponent: React.FC<MenuProps> = ({ menuItems }) => {

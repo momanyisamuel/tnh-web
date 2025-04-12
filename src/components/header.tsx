@@ -10,40 +10,41 @@ const menuItems = [
     name: "About Us",
     dropdown: [
       [
-        "About Us",
-        "History",
-        "Board of Management",
-        "Board of Trustees",
-        "Senior Management team",
-        "Accreditation & Certification",
+         { name: "About Us", link: "/about" },
+         { name: "History", link: "/history" },
+         { name: "Board of Management", link: "/board-of-management" },
+         { name: "Board of Trustees", link: "/board-of-trustees" },
+         { name: "Senior Management team", link: "/senior-management-team" },
+         { name: "Accreditation & Certification", link: "/accreditation-certification" },
       ],
     ],
   },
   {
     name: "Patients & Visitors",
     dropdown: [
-      ["Patient Guidelines", "Visiting Hours", "Billing Information"],
-      ["Insurance Partners", "Medical Records", "Patient Rights"],
+      [{ name: "Visiting Hours", link: "/about" },
+        { name: "Billing Information", link: "/about" },
+        { name: "Insurance Partners", link: "/about" },
+        { name: "Medical Records", link: "/about" },
+        { name: "Patient Rights", link: "/about" },
     ],
+  ]
   },
   {
     name: "Clinical services",
     link: "/clinics",
   },
-
-  // {
-  //   name: "Clinical Services",
-  //   dropdown: [
-  //     ["Emergency Services", "Outpatient Services", "Surgical Procedures"],
-  //     ["Pediatrics", "Internal Medicine", "Maternity Services"],
-  //   ],
-  // },
   {
-    name: "College of Health Sciences",
-    dropdown: [
-      ["About the college", "Basic Departments", "Post Basic Department"],
-      ["Student Sponsorship", "Facilities and Downloads", "Alumni", "FAQs"],
-    ],
+    name: "College of Health Sciences", link: "/college",
+    // dropdown: [
+    //   [
+    //     { name: "Patient Rights", link: "/about" },
+    //    { name: "Patient Rights", link: "/about" },
+    //      { name: "Patient Rights", link: "/about" },
+    //      { name: "Patient Rights", link: "/about" },
+    //     { name: "Patient Rights", link: "/about" },"About the college", "Basic Departments", "Post Basic Department"],
+    //   ["Student Sponsorship", "Facilities and Downloads", "Alumni", "FAQs"],
+    // ],
   },
   { name: "Contact us", link: "/careers" },
 ];

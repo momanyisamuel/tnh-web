@@ -5,7 +5,7 @@ import { Link } from "react-router";
 interface MenuItemProps {
   name: string;
   link?: string;
-  dropdown?: string[][];
+  dropdown?:  { name: string; link: string }[][];
 }
 
 const MenuItem: React.FC<MenuItemProps> = ({ name, link, dropdown }) => {
@@ -36,8 +36,8 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, link, dropdown }) => {
                   key={index}
                   className="p-2 rounded-lg hover:bg-yellow-600 hover:text-white"
                 >
-                  <Link to={`/${subItem.replace(/\s+/g, "-").toLowerCase()}`}>
-                    {subItem}
+                  <Link to={subItem.link}>
+                    {subItem.name}
                   </Link>
                 </div>
               ))}
