@@ -20,44 +20,34 @@ type TeamMember = {
   
 const teamMembers: TeamMember[] = [
     {
-      name: "Dr. Barcley Onyambu",
-      title: "Co-Founder / CEO",
-      image: "https://cms.thenairobihosp.org/uploads/4_Dr_Barcley_Onyambu_Board_Member_49cf114418.jpg",
+      name: "Prof. Githu Muigai",
+      title: "Trustee Member",
+      image: "https://cms.thenairobihosp.org/uploads/Prof_Githu_Muigai_Senior_Counsel_63b852fa65.png",
     },
     {
-      name: "Mr. Samson Mbuthia Kinyanjui",
-      title: "Co-Founder / CTO",
-      image: "https://cms.thenairobihosp.org/uploads/9_Mr_Samson_Kinyanjui_Board_Member_ded7ccd788.jpg",
+      name: "Dr. Richard Baraza",
+      title: "Trustee Member",
+      image: "https://cms.thenairobihosp.org/uploads/Dr_Richard_Baraza_Consultant_General_Surgeon_4400eb3fcb.png",
     },
     {
-      name: "Dries Vincent",
-      title: "Business Relations",
-      image: "https://cms.thenairobihosp.org/uploads/3_Dr_Magdalene_Muthoka_Ph_D_Board_Member_d0770f31e5.jpg",
+      name: "Dr. Jane Nyakang'o",
+      title: "Trustee Member",
+      image: "https://cms.thenairobihosp.org/uploads/Dr_Jane_Nyakang_o_Environmental_and_Social_Safeguards_Specialist_f5801dcbe5.png",
     },
     {
-      name: "",
-      title: "Front-end Developer",
-      image: "https://cms.thenairobihosp.org/uploads/7_Dr_Fred_Kambuni_MBS_Board_Member_27c105a3de.jpg",
+      name: "Mrs. Cecilia Ngalyuka",
+      title: "Trustee Member",
+      image: "https://cms.thenairobihosp.org/uploads/gladwell_bcb00de3c7.jpg",
     },
     {
-      name: "Courtney Henry",
-      title: "Designer",
-      image: "https://cms.thenairobihosp.org/uploads/Dr_Mbira_Gikonyo_8ccc6c9562.jpg",
+      name: "Dr. Meshach Ong'uti",
+      title: "Trustee Member",
+      image: "https://cms.thenairobihosp.org/uploads/Dr_Meshach_Onguti_Consultant_Specialist_Reconstructive_Maxillofacial_and_Craniofacial_Surgeon_82ee2f698a.jpg",
     },
     {
-      name: "Tom Cook",
-      title: "Director of Product",
-      image: "https://cms.thenairobihosp.org/uploads/8_Prof_Herman_Manyora_Board_Member_c0a468d2b4.jpg",
-    },
-    {
-      name: "Whitney Francis",
-      title: "Copywriter",
-      image: "https://cms.thenairobihosp.org/uploads/1_Hon_Dr_Chris_M_N_Bichage_Ph_D_Chairman_c89abc07fa.jpg",
-    },
-    {
-      name: "Leonard Krasner",
-      title: "Senior Designer",
-      image: "https://cms.thenairobihosp.org/uploads/10_Ms_Valerie_Gaya_Board_Member_e847fa8d3d.jpg",
+      name: "Prof. Donald Orinda",
+      title: "Trustee Member",
+      image: "https://cms.thenairobihosp.org/uploads/Prof_Donald_Orinda_Professor_of_Clinical_and_Chemical_Pathology_e7c18d2780.jpg",
     },
   ];
 

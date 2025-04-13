@@ -42,6 +42,11 @@ const UIRoutes = {
     path: "/board-of-trustees",
     component: lazyLoad(() => import("../pages/about/BoardOfTrustees")),
   },
+  boardS: {
+    name: "navigation.boardT",
+    path: "/senior-management-team",
+    component: lazyLoad(() => import("../pages/about/SeniorManagement")),
+  },
 
 };
 
