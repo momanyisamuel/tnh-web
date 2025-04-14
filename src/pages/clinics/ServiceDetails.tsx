@@ -20,10 +20,30 @@ const ServiceDetails = () => {
 
   return (
     <>
-      <Header />
+      <Header colorChanges="" />
+      <section className="bg-red-900 text-white p-5 md:p-16  ">
+        <div className="grid md:grid-cols-2 gap-2 px-48">
+          {/* Text Content */}
+          <div className="flex flex-col justify-center space-y-4 max-w-xl">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+              {service.name}
+            </h1>
+            <p className="text-lg md:text-xl">{service.description}</p>
+          </div>
+
+          {/* Image Grid */}
+          <div className="">
+            <img
+              src={service.image.src}
+              className="rounded-lg  object-fill h-48 w-96 "
+              alt="Image 1"
+            />
+          </div>
+        </div>
+      </section>
       <div className="flex flex-col items-center py-10 px-5 bg-gray-50 min-h-screen">
         <img
-          src={service.image.src[0]}
+          src={service.image.src}
           alt={service.image.alt}
           className="w-full max-w-4xl rounded-lg shadow-md object-cover h-72"
         />

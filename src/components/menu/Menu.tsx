@@ -12,7 +12,7 @@ const MenuComponent: React.FC<MenuProps> = ({ menuItems }) => {
   return (
     <ul className="flex flex-col lg:flex-row lg:gap-8 p-6 lg:p-0">
       {menuItems.map((item, index) => (
-        <MenuItem
+        <MenuItem 
           key={index}
           name={item.name}
           link={item.link}

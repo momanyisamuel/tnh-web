@@ -10,32 +10,37 @@ const menuItems = [
     name: "About Us",
     dropdown: [
       [
-         { name: "About Us", link: "/about" },
-         { name: "History", link: "/history" },
-         { name: "Board of Management", link: "/board-of-management" },
-         { name: "Board of Trustees", link: "/board-of-trustees" },
-         { name: "Senior Management team", link: "/senior-management-team" },
-         { name: "Accreditation & Certification", link: "/accreditation-certification" },
+        { name: "About Us", link: "/about" },
+        { name: "History", link: "/history" },
+        { name: "Board of Management", link: "/board-of-management" },
+        { name: "Board of Trustees", link: "/board-of-trustees" },
+        { name: "Senior Management team", link: "/senior-management-team" },
+        {
+          name: "Accreditation & Certification",
+          link: "/accreditation-certification",
+        },
       ],
     ],
   },
   {
     name: "Patients & Visitors",
     dropdown: [
-      [{ name: "Visiting Hours", link: "/about" },
+      [
+        { name: "Visiting Hours", link: "/about" },
         { name: "Billing Information", link: "/about" },
         { name: "Insurance Partners", link: "/about" },
         { name: "Medical Records", link: "/about" },
         { name: "Patient Rights", link: "/about" },
+      ],
     ],
-  ]
   },
   {
     name: "Clinical services",
     link: "/clinics",
   },
   {
-    name: "College of Health Sciences", link: "/college",
+    name: "College of Health Sciences",
+    link: "/college",
     // dropdown: [
     //   [
     //     { name: "Patient Rights", link: "/about" },
@@ -49,17 +54,23 @@ const menuItems = [
   { name: "Contact us", link: "/careers" },
 ];
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  colorChanges: string;
+}
+
+const Header: React.FC<HeaderProps> = ({
+  colorChanges = "bg-white text-black",
+}) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
+  console.log("Header colorChanges:", colorChanges);
+
   return (
-    <nav className="bg-white mx-[5%] text-black px-6 py-3 flex justify-between items-center relative">
+    <nav className="bg-white px-6 py-3 flex justify-between items-center sticky top-0">
       {/* Logo and Text on the Left */}
       <div className="flex items-center">
         <img src={logo} alt="Nairobi Hospital Logo" className="w-30 h-20" />
-        <span className="text-lg font-bold">
-          THE <br /> NAIROBI <br /> HOSPITAL
-        </span>
+        <span className="text-lg font-bold">THE NAIROBI HOSPITAL</span>
       </div>
 
       {/* Mobile Menu Toggle Button on the Right */}

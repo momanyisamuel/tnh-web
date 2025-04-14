@@ -3,6 +3,7 @@ import care1 from "@/assets/images/image2.jpg";
 import care2 from "@/assets/images/image1.png";
 import care3 from "@/assets/images/image3.png";
 import care4 from "@/assets/images/image4.jpg";
+import { Link } from "react-router";
 
 const Hero = () => {
   return (
@@ -22,12 +23,12 @@ const Hero = () => {
           </p>
           <div className="flex space-x-4">
             <button className="bg-white text-black px-5 py-2 rounded-lg font-semibold">
-              Clinical Services
+              <Link to="/clinics"> Clinical Services </Link>
             </button>
-            <a href="#about" className="flex items-center space-x-2">
+            <Link to="/about" className="flex items-center space-x-2">
               <span>About Us</span>
               <span className="text-xl">→</span>
-            </a>
+            </Link>
           </div>
         </div>
 

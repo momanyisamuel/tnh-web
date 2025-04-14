@@ -50,7 +50,7 @@ const UIRoutes = {
   HistorY: {
     name: "navigation.HistorY",
     path: "/history",
-    component: lazyLoad(() => import("../pages/about/history")),
+    component: lazyLoad(() => import("../pages/about/History")),
   }
 
 };
