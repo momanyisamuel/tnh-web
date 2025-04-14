@@ -47,6 +47,11 @@ const UIRoutes = {
     path: "/senior-management-team",
     component: lazyLoad(() => import("../pages/about/SeniorManagement")),
   },
+  HistorY: {
+    name: "navigation.HistorY",
+    path: "/history",
+    component: lazyLoad(() => import("../pages/about/history")),
+  }
 
 };
 
