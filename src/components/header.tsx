@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/static/tnh_logo.svg";
 //import MenuComponent from "./Menu";
 import MenuComponent from "./menu/Menu";
+import { Link } from "react-router";
 
 const menuItems = [
-  { name: "Home", link: "/" },
   {
     name: "About Us",
     dropdown: [
@@ -58,19 +58,29 @@ interface HeaderProps {
   colorChanges: string;
 }
 
-const Header: React.FC<HeaderProps> = ({
-  colorChanges = "bg-white text-black",
-}) => {
+const Header: React.FC<HeaderProps> = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  const [scrollWidth, setScrollWidth] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollableHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = window.scrollY;
+      const progress = (scrolled / scrollableHeight) * 100;
+      setScrollWidth(progress);
+    };
 
-  console.log("Header colorChanges:", colorChanges);
-
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <nav className="bg-white px-6 py-3 flex justify-between items-center sticky top-0">
+    <nav className="bg-white sm:px-6 lg:px-50 py-3 flex items-center justify-between sticky top-0 z-50 shadow-lg ">
       {/* Logo and Text on the Left */}
       <div className="flex items-center">
-        <img src={logo} alt="Nairobi Hospital Logo" className="w-30 h-20" />
-        <span className="text-lg font-bold">THE NAIROBI HOSPITAL</span>
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="Nairobi Hospital Logo" className="w-30 h-20" />
+          <span className="text-lg font-bold">THE NAIROBI HOSPITAL</span>
+        </Link>
       </div>
 
       {/* Mobile Menu Toggle Button on the Right */}
@@ -89,7 +99,7 @@ const Header: React.FC<HeaderProps> = ({
       >
         {/* Mobile Logo and Text at the Top of the Menu */}
         <div className="flex items-center justify-between px-6 py-4 lg:hidden border-b">
-          <div className="flex items-center">
+          <div className="flex items-center ">
             <img src={logo} alt="Nairobi Hospital Logo" className="w-24 h-16" />
             <span className="text-lg font-bold">THE NAIROBI HOSPITAL</span>
           </div>
@@ -101,6 +111,12 @@ const Header: React.FC<HeaderProps> = ({
         {/* Menu Items */}
         <MenuComponent menuItems={menuItems} />
       </div>
+      <div
+        id="scroll-progress"
+        className="bg-red-700 h-1 absolute bottom-0 left-0 transition-all duration-100 ease-out"
+        // className="bg-red-700 h-1 fixed top-0 left-0 z-50 transition-all duration-100 ease-out"
+        style={{ width: `${scrollWidth}%` }}
+      />
     </nav>
   );
 };
