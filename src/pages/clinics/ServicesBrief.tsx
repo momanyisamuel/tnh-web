@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const ServicesBrief = () => {
   const ServicesShortList = [
@@ -8,7 +9,7 @@ const ServicesBrief = () => {
     { name: "Paediatrics", link: "/paediatrics" },
     { name: "Internal Medicine", link: "/internal-medicine" },
     { name: "Maternity Services", link: "/maternity-services" },
-    { name: "Pharmacy Services", link: "/pharmacy-services" },
+    { name: "Pharmacy Services", link: "service-detail/pharmacy-services" },
     { name: "Laboratory Services", link: "/lab-services" },
   ];
 
@@ -21,7 +22,9 @@ const ServicesBrief = () => {
       <div className="flex flex-col md:grid-cols-2 lg:flex-row lg:flex-wrap justify-center gap-4 text-white ">
         {ServicesShortList.map((item) => (
           <div key={item.name}>
-            <li>{item.name}</li>
+            <Link to={item.link}>
+              <li>{item.name}</li>
+            </Link>
           </div>
         ))}
       </div>
