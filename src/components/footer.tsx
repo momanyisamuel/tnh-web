@@ -1,7 +1,12 @@
 import React from "react";
 import logo from "@/assets/static/tnh_logo.png";
-import insta from "@/assets/static/instgram.jpg";
-import linkedin from "@/assets/static/linkedin.png";
+import insta from "@/assets/static/instagram-logo.svg";
+import youtube from "@/assets/static/youtube-logo.svg";
+import linkedin from "@/assets/static/linkedin-logo.svg";
+import facebook from "@/assets/static/facebook-logo.svg";
+import twitter from "@/assets/static/twitter-logo.svg";
+import whatsapp from "@/assets/static/whatsapp-logo.svg";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -68,15 +73,46 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-300 mt-10 pt-5 flex flex-col md:flex-row items-center justify-between">
           <img src={logo} alt="Nairobi Hospital Logo" className="w-30 h-20" />
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <span className="cursor-pointer">
-              <img src={insta} alt="Instagram" className="w-10 h-10" />
-            </span>
-            <span className="cursor-pointer">
-              <img src={linkedin} alt="linkedin" className="w-10 h-10" />
-            </span>
-            <span className="cursor-pointer">▶️</span>
-            <span className="cursor-pointer">💼</span>
+          <div className="flex flex-col items-center justify-between gap-3">
+            <span className="font-sans text-lg italic ">Get in touch</span>
+            <div className="flex space-x-4 mt-4 md:mt-0">
+              <Link
+                to="https://web.whatsapp.com/send?phone=254110922834"
+                className="cursor-pointer"
+              >
+                <img src={whatsapp} alt="whatsapp" className="w-10 h-10" />
+              </Link>
+              <Link
+                to="https://www.facebook.com/TheNairobiHosp"
+                className="cursor-pointer"
+              >
+                <img src={facebook} alt="facebook" className="w-10 h-10" />
+              </Link>
+              <Link
+                to="https://twitter.com/thenairobihosp"
+                className="cursor-pointer"
+              >
+                <img src={twitter} alt="twiter" className="w-10 h-10" />
+              </Link>
+              <Link
+                to="https://www.youtube.com/channel/UChUuucNLoxQqFKgVW2G5AlA"
+                className="cursor-pointer"
+              >
+                <img src={youtube} alt="youtube" className="w-10 h-10" />
+              </Link>
+              <Link
+                to="https://www.instagram.com/nairobihosp/"
+                className="cursor-pointer"
+              >
+                <img src={insta} alt="Instagram" className="w-10 h-10" />
+              </Link>
+              <Link
+                to="https://www.linkedin.com/company/thenairobihospital"
+                className="cursor-pointer"
+              >
+                <img src={linkedin} alt="linkedin" className="w-10 h-10" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
