@@ -1,7 +1,6 @@
 {
   "name": "tnh-web",
   "private": true,
-  "packageManager": "npm@10.6.0",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
