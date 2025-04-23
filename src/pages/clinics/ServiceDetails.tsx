@@ -38,7 +38,7 @@ const ServiceDetails = () => {
 
   return (
     <>
-      <Header colorChanges="" />
+      <Header />
       <section className="bg-red-900 text-white p-5 md:p-16  ">
         <div className="grid md:grid-cols gap-2 lg:px-36">
           {/* Text Content */}
