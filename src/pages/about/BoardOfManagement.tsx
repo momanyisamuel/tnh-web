@@ -1,7 +1,6 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { FC } from "react";
-import { NavigationTabs } from "./NavigationTabs";
 import TeamPage from "./TeamPage"
 
 type TeamPageProps = {

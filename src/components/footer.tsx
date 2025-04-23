@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "@/assets/static/tnh_logo.png";
 import insta from "@/assets/static/instagram-logo.svg";
 import youtube from "@/assets/static/youtube-logo.svg";

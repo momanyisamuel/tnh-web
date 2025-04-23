@@ -1,8 +1,3 @@
-import React from "react";
-import dentist from "@/assets/images/dentist.jpg";
-import pharmacy from "@/assets/images/Pharmacy.jpg";
-import antenatal from "@/assets/images/antenatal.jpg";
-import gyne from "@/assets/images/gynecology.jpg";
 import { Link } from "react-router";
 import clinicalServices from "@/data/clinicalServices.json";
 

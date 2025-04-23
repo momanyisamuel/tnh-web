@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import amref from "@/assets/images/Amref.png";
 import Uap from "@/assets/images/UAP-LOGO.png";
 import cigma from "@/assets/images/cigna.png";

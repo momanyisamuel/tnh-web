@@ -1,0 +1,10 @@
+const SeniorManagement = () => {
+    return (
+        <div>
+            {/* Other components */}
+            <Header colorChanges={/* provide appropriate value */} />
+        </div>
+    );
+};
+
+export default SeniorManagement;

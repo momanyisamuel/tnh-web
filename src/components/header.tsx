@@ -54,11 +54,7 @@ const menuItems = [
   { name: "Contact us", link: "/careers" },
 ];
 
-interface HeaderProps {
-  colorChanges: string;
-}
-
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [scrollWidth, setScrollWidth] = useState(0);
   useEffect(() => {

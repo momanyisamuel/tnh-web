@@ -1,5 +1,3 @@
-import React from "react";
-
 const Opc = () => {
   return (
     <div className="rounded-lg p-6 md:p-10 text-center bg-grey-50 dark:border-gray-700 shadow-xl mx-[16%] my-10">
