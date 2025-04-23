@@ -1,11 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import amref from "@/assets/images/Amref.png";
 import Uap from "@/assets/images/UAP-LOGO.png";
 import cigma from "@/assets/images/cigna.png";
 import madison from "@/assets/images/madison.png";
 import jubilee from "@/assets/images/jubilee.png";
 
-const images = [
+interface Image {
+  src: string;
+  alt: string;
+}
+
+const images: Image[] = [
   { src: amref, alt: "Amref" },
   { src: Uap, alt: "UAP" },
   { src: cigma, alt: "Cigna" },
@@ -15,70 +20,79 @@ const images = [
 
 const OurPartners = () => {
   const [index, setIndex] = useState(0);
-  const itemsPerSlide = 3;
-  const totalSlides = Math.ceil(images.length / itemsPerSlide);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, [totalSlides]);
+  const visibleItems = 4;
+  const totalItems = images.length;
+
+  const movePrev = () => {
+    setIndex((prev) => (prev - 1 + totalItems) % totalItems);
+  };
+
+  const moveNext = () => {
+    setIndex((prev) => (prev + 1) % totalItems);
+  };
+
+  const getVisibleImages = () => {
+    const visible = [];
+    for (let i = 0; i < visibleItems; i++) {
+      visible.push(images[(index + i) % totalItems]);
+    }
+    return visible;
+  };
 
   return (
-    <div className="flex flex-col items-center justify-center p-10 bg-gray-100">
-      <h2 className="text-2xl font-semibold mb-4">Our Insurance Partners</h2>
-      <div className="relative w-full max-w-3xl">
-        {/* Left Button */}
+    <div className="flex flex-col items-center justify-center px-4 py-10 bg-white">
+      <h2 className="text-xl sm:text-3xl font-bold text-center mb-6">
+        Our Insurance Partners
+      </h2>
+
+      <div className="relative w-full max-w-5xl">
+        {/* Left Arrow */}
         <button
-          onClick={() => setIndex((index - 1 + totalSlides) % totalSlides)}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-yellow-500 p-2 rounded-full shadow-md"
+          onClick={movePrev}
+          className="absolute -left-4 lg:-left-10 top-1/2 -translate-y-1/2 z-10 
+               hover:bg-[#dcb887] bg-yellow-500  text-sm sm:text-base
+               p-1 sm:p-3 rounded-3xl lg:rounded-full shadow-3xl border"
         >
-          &#8592;
+          ←
         </button>
 
-        {/* Carousel */}
-        <div className="overflow-hidden w-full">
-          <div
-            className="flex transition-transform ease-in-out duration-500"
-            style={{ transform: `translateX(-${index * 100}%)` }}
-          >
-            {Array.from({ length: totalSlides }).map((_, slideIndex) => (
-              <div key={slideIndex} className="flex w-full justify-around">
-                {images
-                  .slice(
-                    slideIndex * itemsPerSlide,
-                    (slideIndex + 1) * itemsPerSlide
-                  )
-                  .map((image, i) => (
-                    <div
-                      key={i}
-                      className="w-1/3 flex items-center justify-center border rounded-lg p-4"
-                    >
-                      <img src={image.src} alt={image.alt} className="h-12" />
-                    </div>
-                  ))}
+        {/* Carousel Track */}
+        <div className="w-full flex justify-between ">
+          {getVisibleImages().map((image, i) => (
+            <div
+              key={i}
+              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center p-2 lg:p-3"
+            >
+              <div className="border rounded-lg lg:p-4 md:p-3 shadow-md flex justify-center items-center w-full lg:h-32">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="h-full object-contain"
+                />
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
 
-        {/* Right Button */}
+        {/* Right Arrow */}
         <button
-          onClick={() => setIndex((index + 1) % totalSlides)}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-yellow-500 p-2 rounded-full shadow-md"
+          onClick={moveNext}
+          className="absolute -right-4 lg:-right-10 top-1/2 -translate-y-1/2 z-10 
+                hover:bg-[#dcb887] bg-yellow-500 text-sm sm:text-base
+               p-1 sm:p-3 rounded-3xl lg:rounded-full shadow-md border"
         >
-          &#8594;
+          →
         </button>
       </div>
 
       {/* Indicators */}
       <div className="flex justify-center space-x-2 mt-4">
-        {Array.from({ length: totalSlides }).map((_, i) => (
+        {images.map((_, i) => (
           <span
             key={i}
-            className={`w-3 h-3 rounded-full ${
-              i === index ? "bg-red-700" : "bg-gray-400"
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              i === index ? "bg-red-700 scale-125" : "bg-gray-300"
             }`}
           ></span>
         ))}

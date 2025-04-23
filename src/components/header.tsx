@@ -81,7 +81,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu Toggle Button on the Right */}
       <button
-        className="lg:hidden text-black"
+        className="lg:hidden text-black px-4"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >
         {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

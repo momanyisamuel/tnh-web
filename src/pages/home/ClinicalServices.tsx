@@ -5,8 +5,10 @@ import clinicalServices from "@/data/clinicalServices.json";
 const Services = () => {
   const servicesToShow = clinicalServices.slice(0, 4);
   return (
-    <div className="flex flex-col items-center justify-center mt-8">
-      <h1 className="font-bold text-4xl my-10">Clinical Services</h1>
+    <div className="flex flex-col items-center justify-center mt-2">
+      <h1 className="font-bold text-xl sm:text-3xl md:text-4xl my-10 ">
+        Clinical Services
+      </h1>
 
       <div className="flex flex-wrap items-center px-[5%] gap-6 justify-center">
         {servicesToShow.map((item) => (
@@ -24,7 +26,7 @@ const Services = () => {
               alt={item.image.alt}
             />
             <div className="p-5">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">
+              <h5 className="mb-2 text-xl sm:text-2xl md:text-2xl  font-bold tracking-tight text-gray-900 dark:text-white ">
                 {item.name}
               </h5>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
