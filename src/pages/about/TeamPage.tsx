@@ -32,11 +32,11 @@ const TeamPage: React.FC<TeamPageProps> = ({ title, description, members }) => {
 
 //layout for cards
 const TeamCard: React.FC<TeamMember> = ({ name, title, image }) => (
-  <div className="bg-grey-300 shadow-md rounded-lg overflow-hidden text-center p-4">
+  <div className="bg-grey-300 rounded-lg overflow-hidden text-center p-3">
     <img
       src={image}
       alt={name}
-      className="w-[95%] px-4 object-cover rounded-md mb-4 hover:scale-[1.02] hover:-translate-y-1 transition-transform"
+      className="w-70 h-70 shadow-md mx-auto p-4 object-cover rounded-lg mb-4 hover:scale-[1.02] hover:-translate-y-1 transition-transform"
     />
     <h3 className="mt-4 font-semibold text-gray-800">{name}</h3>
     <p className="text-sm text-gray-500">{title}</p>

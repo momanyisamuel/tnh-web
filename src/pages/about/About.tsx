@@ -1,5 +1,5 @@
 import Footer from "@/components/footer";
-import Header from "@/components/header";
+import Navbar from "@/components/Navbar";
 import { FC } from "react";
 
 type AboutProps = object;
@@ -7,7 +7,7 @@ type AboutProps = object;
 const About: FC<AboutProps> = () => {
   return (
     <>
-      <Header />
+      <Navbar />
       <div className="px-4 py-8 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-6 items-center mb-12 ">
           <img

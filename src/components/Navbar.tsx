@@ -7,6 +7,10 @@ import { Link } from "react-router";
 
 const menuItems = [
   {
+    name: "Home",
+    link: "/",
+  },
+  {
     name: "About Us",
     dropdown: [
       [
@@ -54,7 +58,7 @@ const menuItems = [
   { name: "Contact us", link: "/careers" },
 ];
 
-const Header: React.FC = () => {
+const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [scrollWidth, setScrollWidth] = useState(0);
   useEffect(() => {
@@ -70,12 +74,12 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <nav className="bg-white sm:px-6 lg:px-50 py-3 flex items-center justify-between sticky top-0 z-50 shadow-lg ">
+    <nav className="bg-white h-[80px] sm:px-6 lg:px-50 py-3 flex items-center justify-between sticky top-0 z-50 shadow-lg ">
       {/* Logo and Text on the Left */}
       <div className="flex items-center">
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="Nairobi Hospital Logo" className="w-30 h-20" />
-          <span className="text-lg font-bold">THE NAIROBI HOSPITAL</span>
+          <img src={logo} alt="Nairobi Hospital Logo" className="w-25 h-15" />
+          <span className="text-lg font-bold ">THE NAIROBI HOSPITAL</span>
         </Link>
       </div>
 
@@ -117,4 +121,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default Navbar;

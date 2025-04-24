@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
 import React, { useEffect, useState } from "react";
 
@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 const History: React.FC = () => {
   return (
     <>
-      <Header />
+      <Navbar />
       <section className="bg-gray-50 py-12 px-4">
         <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
           <div className="space-y-5 text-gray-700 text-sm leading-relaxed">

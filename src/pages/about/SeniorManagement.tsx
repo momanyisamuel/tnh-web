@@ -1,5 +1,5 @@
 import Footer from "@/components/footer";
-import Header from "@/components/header";
+import Navbar from "@/components/Navbar";
 import { FC } from "react";
 import TeamPage from "./TeamPage";
 
@@ -93,7 +93,7 @@ const teamMembers: TeamMember[] = [
 const SeniorManagement: FC<TeamPageProps> = () => {
   return (
     <>
-      <Header />
+      <Navbar />
       {/* <NavigationTabs /> */}
       <TeamPage
         title="Senior Management Team"

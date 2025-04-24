@@ -1,12 +1,12 @@
 import Footer from "@/components/footer";
-import Header from "@/components/header";
+import Navbar from "@/components/Navbar";
 import ServicesBrief from "./ServicesBrief";
 import ServiceCards from "./ServicesCards";
 
 const Clinics = () => {
   return (
     <div>
-      <Header />
+      <Navbar />
       <ServicesBrief />
       <ServiceCards />
       <Footer />

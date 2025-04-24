@@ -1,6 +1,6 @@
 import Footer from "@/components/footer";
-import Header from "@/components/header";
-//import Header from '../../components/header'
+import Navbar from "@/components/Navbar";
+//import Navbar from '../../components/Navbar'
 import { FC } from "react";
 import Hero from "./hero";
 import Services from "./ClinicalServices";
@@ -12,7 +12,7 @@ type HomeProps = object;
 const Home: FC<HomeProps> = () => {
   return (
     <>
-      <Header />
+      <Navbar />
       <Hero />
       <Services />
       <Opc />
