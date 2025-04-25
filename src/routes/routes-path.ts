@@ -1,4 +1,5 @@
 import { lazyLoad } from "@/components/layout/lazy-load";
+import path from "path";
 
 export type UIRoutesType = {
   name: string;
@@ -51,6 +52,11 @@ const UIRoutes = {
     name: "navigation.HistorY",
     path: "/history",
     component: lazyLoad(() => import("../pages/about/History")),
+  },
+  accrediTation:{
+    name: "navigation.accrediTation",
+    path: "/accreditation-certification",
+    component: lazyLoad(() =>import("../pages/about/Accreditation")),
   }
 
 };
