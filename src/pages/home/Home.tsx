@@ -5,8 +5,9 @@ import { FC } from "react";
 import Hero from "./hero";
 import Services from "./ClinicalServices";
 import Opc from "./opc";
-import Ourpatners from "./ourpatners";
 import Features from "./features";
+import AboutSection from "./AboutSection";
+import InsuranceSlider from "./InsuranceSlider";
 type HomeProps = object;
 
 const Home: FC<HomeProps> = () => {
@@ -17,7 +18,8 @@ const Home: FC<HomeProps> = () => {
       <Features />
       <Services />
       <Opc />
-      <Ourpatners />
+      <AboutSection />
+      <InsuranceSlider />
       <Footer />
     </>
   );

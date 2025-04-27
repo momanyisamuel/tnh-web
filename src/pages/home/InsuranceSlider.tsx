@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import amref from "@/assets/images/Amref.png";
 import Uap from "@/assets/images/UAP-LOGO.png";
 import cigma from "@/assets/images/cigna.png";
 import madison from "@/assets/images/madison.png";
 import jubilee from "@/assets/images/jubilee.png";
+import { ChevronRight } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 
 interface Image {
   src: string;
@@ -18,7 +20,7 @@ const images: Image[] = [
   { src: jubilee, alt: "Jubilee" },
 ];
 
-const OurPartners = () => {
+const InsuranceSlider = () => {
   const [index, setIndex] = useState(0);
 
   const visibleItems = 4;
@@ -40,8 +42,16 @@ const OurPartners = () => {
     return visible;
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      moveNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [index]);
+
   return (
-    <div className="flex flex-col items-center justify-center px-4 py-10 bg-white">
+    <div className="flex flex-col items-center justify-center px-4 py-10 mx-5 bg-white">
       <h2 className="text-xl sm:text-3xl font-bold text-center mb-6">
         Our Insurance Partners
       </h2>
@@ -52,9 +62,9 @@ const OurPartners = () => {
           onClick={movePrev}
           className="absolute -left-4 lg:-left-10 top-1/2 -translate-y-1/2 z-10 
                hover:bg-[#dcb887] bg-yellow-500  text-sm sm:text-base
-               p-1 sm:p-3 rounded-3xl lg:rounded-full shadow-3xl border"
+               p-1 sm:p-3 rounded-3xl lg:rounded-full shadow-3xl border cursor-pointer"
         >
-          ←
+          <ChevronLeft className="h-5 w-5 text-white" />
         </button>
 
         {/* Carousel Track */}
@@ -80,9 +90,9 @@ const OurPartners = () => {
           onClick={moveNext}
           className="absolute -right-4 lg:-right-10 top-1/2 -translate-y-1/2 z-10 
                 hover:bg-[#dcb887] bg-yellow-500 text-sm sm:text-base
-               p-1 sm:p-3 rounded-3xl lg:rounded-full shadow-md border"
+               p-1 sm:p-3 rounded-3xl lg:rounded-full shadow-md border cursor-pointer"
         >
-          →
+          <ChevronRight className="h-5 w-5 text-white" />
         </button>
       </div>
 
@@ -101,4 +111,4 @@ const OurPartners = () => {
   );
 };
 
-export default OurPartners;
+export default InsuranceSlider;
