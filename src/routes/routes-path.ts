@@ -52,12 +52,16 @@ const UIRoutes = {
     path: "/history",
     component: lazyLoad(() => import("../pages/about/History")),
   },
-  accrediTation:{
+  accreditation: {
     name: "navigation.accrediTation",
     path: "/accreditation-certification",
-    component: lazyLoad(() =>import("../pages/about/Accreditation")),
-  }
-
+    component: lazyLoad(() => import("../pages/about/Accreditation")),
+  },
+  opcList: {
+    name: "navigation.opcList",
+    path: "/opc-list",
+    component: lazyLoad(() => import("../pages/outpatient-centers/OpcList")),
+  },
 };
 
 export const RoutesPath: Record<keyof typeof UIRoutes, UIRoutesType> = UIRoutes;
