@@ -6,7 +6,6 @@ import Hero from "./hero";
 import Services from "./ClinicalServices";
 import Opc from "./opc";
 import Features from "./features";
-import AboutSection from "./AboutSection";
 import InsuranceSlider from "./InsuranceSlider";
 import Metrixs from "./Metrixs";
 type HomeProps = object;
@@ -20,7 +19,7 @@ const Home: FC<HomeProps> = () => {
       <Metrixs />
       <Services />
       <Opc />
-      <AboutSection />
+      {/* <AboutSection /> */}
       <InsuranceSlider />
       <Footer />
     </>
