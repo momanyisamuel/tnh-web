@@ -3,11 +3,11 @@ import Navbar from "@/components/Navbar";
 //import Navbar from '../../components/Navbar'
 import { FC } from "react";
 import Hero from "./hero";
-import Services from "./ClinicalServices";
 import Opc from "./opc";
 import Features from "./features";
 import AboutSection from "./AboutSection";
 import InsuranceSlider from "./InsuranceSlider";
+import ServicesSection from "./ServicesSection";
 type HomeProps = object;
 
 const Home: FC<HomeProps> = () => {
@@ -16,7 +16,8 @@ const Home: FC<HomeProps> = () => {
       <Navbar />
       <Hero />
       <Features />
-      <Services />
+      <ServicesSection />
+      {/* <Services /> */}
       <Opc />
       <AboutSection />
       <InsuranceSlider />
