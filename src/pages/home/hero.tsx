@@ -6,7 +6,7 @@ import { Link } from "react-router";
 
 const Hero = () => {
   return (
-    <section className="bg-red-900 mt-8 text-white p-5 md:p-16 rounded-2xl mx-[10%] w-auto">
+    <section className="bg-red-900 mt-8 text-white p-5 md:p-16 rounded-2xl mx-[4%] md:mx-[10%] w-auto">
       <div className="grid md:grid-cols-2 gap-6">
         {/* Text Content */}
         <div className="flex flex-col justify-center space-y-4">

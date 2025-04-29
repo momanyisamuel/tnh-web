@@ -6,7 +6,7 @@ const Services = () => {
   const servicesToShow = clinicalServices.slice(0, 4);
   return (
     <div className="flex flex-col items-center justify-center mt-2">
-      <h1 className="font-bold text-xl sm:text-3xl md:text-4xl my-10 ">
+      <h1 className="font-bold text-3xl font-semibold text-red-900 mb-4 ">
         Clinical Services
       </h1>
 

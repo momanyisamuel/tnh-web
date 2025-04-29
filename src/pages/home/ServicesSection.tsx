@@ -17,7 +17,7 @@ const ServicesSection = () => {
           </p>
         </div>
         <button className="bg-red-900 text-white mx-15 hidden md:block px-4 py-2 rounded-md font-semibold">
-          All Services
+          <Link to={`/clinics`}>All Services</Link>
         </button>
       </div>
 
@@ -25,8 +25,8 @@ const ServicesSection = () => {
         <Link to={`/service-detail/pharmacy-services`}>
           <div className="md:flex items-start bg-white p-6 py-10 rounded-lg transition duration-300 hover:bg-yellow-400 hover:shadow-md cursor-pointer">
             <div className="flex items-center mr-12">
-              <Pill className="mt-2 mr-4 text-red-900 h-15 w-15 md:h-10 w-10" />
-              <h2 className="text-3xl font-serif  text-red-900">
+              <Pill className="mt-2 mr-4 text-red-900 h-8 w-8 md:h-10 w-10" />
+              <h2 className="text-2xl md:text-3xl font-serif  text-red-900">
                 Pharmacy Services
               </h2>
             </div>
@@ -44,8 +44,8 @@ const ServicesSection = () => {
         <Link to={`/service-detail/laboratory-services`}>
           <div className="md:flex items-start bg-white p-6 py-10 rounded-lg transition duration-300 hover:bg-yellow-400 hover:shadow-md cursor-pointer">
             <div className="flex items-center mr-12">
-              <FlaskConical className="mt-2 mr-4 text-red-900 h-15 w-15 md:h-10 w-10" />
-              <h2 className="text-3xl font-serif  text-red-900">
+              <FlaskConical className="mt-2 mr-4 text-red-900 h-8 w-8 md:h-10 w-10" />
+              <h2 className="text-2xl md:text-3xl font-serif  text-red-900">
                 Laboratory Services
               </h2>
             </div>
@@ -63,8 +63,8 @@ const ServicesSection = () => {
         <Link to={`/service-detail/radiology-services`}>
           <div className="md:flex items-start bg-white p-6 py-10 rounded-lg transition duration-300 hover:bg-yellow-400 hover:shadow-md cursor-pointer">
             <div className="flex items-center mr-12">
-              <Radiation className="mt-2 mr-4 text-red-900 h-15 w-15 md:h-10 w-10" />
-              <h2 className="text-3xl font-serif  text-red-900">
+              <Radiation className="mt-2 mr-4 text-red-900 h-8 w-8 md:h-10 w-10" />
+              <h2 className="text-2xl md:text-3xl font-serif  text-red-900">
                 Radiology Services
               </h2>
             </div>
