@@ -13,6 +13,7 @@ type TeamMember = {
   name: string;
   title: string;
   image: string;
+  id: string;
   description?: string[];
 };
 
@@ -20,6 +21,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Prof. Githu Muigai",
     title: "Trustee Member",
+    id: "Prof. Githu Muigai",
     image:
       "https://cms.thenairobihosp.org/uploads/Prof_Githu_Muigai_Senior_Counsel_63b852fa65.png",
     description: [
@@ -33,6 +35,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Dr. Richard Baraza",
     title: "Trustee Member",
+    id: "Dr. Richard Baraza",
     image:
       "https://cms.thenairobihosp.org/uploads/Dr_Richard_Baraza_Consultant_General_Surgeon_4400eb3fcb.png",
     description: [
@@ -46,6 +49,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Dr. Jane Nyakang'o",
     title: "Trustee Member",
+    id: "Dr. Jane Nyakang'o",
     image:
       "https://cms.thenairobihosp.org/uploads/Dr_Jane_Nyakang_o_Environmental_and_Social_Safeguards_Specialist_f5801dcbe5.png",
     description: [
@@ -59,6 +63,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Mrs. Cecilia Ngalyuka",
     title: "Trustee Member",
+    id: "Mrs. Cecilia Ngalyuka",
     image: "https://cms.thenairobihosp.org/uploads/gladwell_bcb00de3c7.jpg",
     description: [
       "Psychologists play a crucial role in promoting mental health, understanding human behavior, and contributing to various fields, including healthcare, education, business, and research. They work to enhance the well-being of individuals and communities through their expertise in psychology.",
@@ -71,6 +76,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Dr. Meshach Ong'uti",
     title: "Trustee Member",
+    id: "Dr. Meshach Ong'uti",
     image:
       "https://cms.thenairobihosp.org/uploads/Dr_Meshach_Onguti_Consultant_Specialist_Reconstructive_Maxillofacial_and_Craniofacial_Surgeon_82ee2f698a.jpg",
     description: [
@@ -84,6 +90,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Prof. Donald Orinda",
     title: "Trustee Member",
+    id: "Prof. Donald Orinda",
     image:
       "https://cms.thenairobihosp.org/uploads/Prof_Donald_Orinda_Professor_of_Clinical_and_Chemical_Pathology_e7c18d2780.jpg",
     description: [
