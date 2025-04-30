@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import { Link } from "react-router";
 
 type TeamPageProps = {
   title: string;
@@ -9,6 +10,7 @@ type TeamPageProps = {
 
 type TeamMember = {
   name: string;
+  id?: string;
   title: string;
   image: string;
   id?: string;
@@ -34,21 +36,15 @@ const TeamPage: React.FC<TeamPageProps> = ({ title, description, members }) => {
 
 //layout for cards
 const TeamCard: React.FC<TeamMember> = ({ name, title, id, image }) => (
-  <div className="relative bg-grey-300 rounded-lg overflow-hidden text-center p-3">
+  <div className="bg-grey-300 rounded-lg overflow-hidden text-center p-3">
     <Link to={`/member-page/${id}`}>
-      <div className="group relative ">
-        <img
-          src={image}
-          alt={name}
-          className="w-70 h-100 shadow-md mx-auto object-cover rounded-lg mb-4 transform transition-transform duration-800 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 rounded-lg group-hover:bg-black/50 transition group-hover:scale-110 duration-800 z-10"></div>
-
-        <div className="absolute bottom-0 w-full p-4 transition-opacity duration-800 opacity-100 md:opacity-0 md:group-hover:opacity-100 z-20">
-          <h3 className="mt-4 text-white text-2xl font-bold">{name}</h3>
-          <p className=" text-white text-sm mt-1">{title}</p>
-        </div>
-      </div>
+      <img
+        src={image}
+        alt={name}
+        className="w-70 h-70 shadow-md mx-auto p-4 object-cover rounded-lg mb-4 hover:scale-[1.02] hover:-translate-y-1 transition-transform"
+      />
+      <h3 className="mt-4 font-semibold text-gray-800">{name}</h3>
+      <p className="text-sm text-gray-500">{title}</p>
     </Link>
   </div>
 );

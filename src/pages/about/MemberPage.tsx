@@ -1,0 +1,83 @@
+// React + Tailwind version of Psychologist Profile
+
+import Navbar from "@/components/Navbar";
+import { teamMembers } from "./SeniorManagement";
+import Footer from "@/components/footer";
+import { useParams } from "react-router";
+
+const MemberPage = () => {
+  const { id } = useParams();
+
+  const user = teamMembers.find((person) => person.id === id)!;
+
+  return (
+    <>
+      <Navbar />
+      <div className="bg-white text-gray-800 font-sans p-6 max-w-5xl mx-auto">
+        <div>
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+            <img
+              src={user.image}
+              alt={user.name}
+              className="w-48 h-60 object-cover rounded-xl shadow-md"
+            />
+            <div className="flex-1">
+              <h1 className="text-4xl font-bold text-gray-900">{user.name}</h1>
+              <p className="text-lg text-gray-600 mt-2">{user.title}</p>
+              <p className="mt-4 text-gray-700 max-w-xl">
+                {user.description[0]}
+              </p>
+
+              <div className="mt-4">
+                <p>
+                  <span className="font-semibold">Email:</span>{" "}
+                  <a
+                    href="mailto:emilysmith@example.com"
+                    className="text-blue-600 font-medium"
+                  >
+                    emilysmith@example.com
+                  </a>
+                </p>
+                <p>
+                  <span className="font-semibold">Phone:</span>{" "}
+                  <a
+                    href="tel:+22001110206"
+                    className="text-blue-600 font-medium"
+                  >
+                    +2 200 111 0206
+                  </a>
+                </p>
+              </div>
+
+              <div className="mt-4 flex space-x-4 text-xl text-gray-600">
+                <a href="#">
+                  <i className="fab fa-facebook-square hover:text-blue-600"></i>
+                </a>
+                <a href="#">
+                  <i className="fab fa-instagram hover:text-pink-500"></i>
+                </a>
+                <a href="#">
+                  <i className="fab fa-linkedin hover:text-blue-700"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12">
+            <h2 className="text-3xl font-semibold text-gray-900 mb-4">
+              About Psychologist
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              {user.description.slice(1).map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default MemberPage;
