@@ -62,6 +62,11 @@ const UIRoutes = {
     path: "/opc-list",
     component: lazyLoad(() => import("../pages/outpatient-centers/OpcList")),
   },
+  opcDetails: {
+    name: "navigation.opcDetails",
+    path: "/outpatient-center/:id",
+    component: lazyLoad(() => import("../pages/outpatient-centers/OpcDetails")),
+  },
 };
 
 export const RoutesPath: Record<keyof typeof UIRoutes, UIRoutesType> = UIRoutes;

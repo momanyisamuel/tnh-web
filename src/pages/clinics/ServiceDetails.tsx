@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import Footer from "@/components/footer";
 import Navbar from "@/components/Navbar";
 import clinicalServices from "@/data/clinicalServices.json";
@@ -14,6 +14,16 @@ type AccordionItem = {
   Subject: string;
 };
 
+type Clinic = {
+  id: string;
+  name: string;
+  description: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+};
+
 type Service = {
   id: string;
   name: string;
@@ -23,6 +33,7 @@ type Service = {
     alt: string;
   };
   accordionItems?: Record<string, AccordionItem>;
+  clinics?: Clinic[];
 };
 
 const ServiceDetails = () => {
@@ -35,6 +46,50 @@ const ServiceDetails = () => {
     return (
       <div className="text-center mt-10 text-red-600">Service not found.</div>
     );
+  if (service.clinics && service.clinics.length > 0) {
+    return (
+      <>
+        <Navbar />
+        <section className="bg-red-900 text-white p-5 md:p-16">
+          <div className="grid md:grid-cols gap-2 lg:px-36">
+            <div className="flex flex-col justify-center space-y-4 max-w-xl">
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                {service.name} Clinics
+              </h1>
+              <p className="text-lg md:text-xl">{service.description}</p>
+            </div>
+          </div>
+        </section>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-[5%]">
+          {service.clinics.map((clinic) => (
+            <div
+              key={clinic.id}
+              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-xl"
+            >
+              <img
+                src={clinic.image.src}
+                alt={clinic.image.alt}
+                className="rounded-t-lg w-full h-56 object-cover"
+              />
+              <div className="p-5">
+                <h5 className="mb-2 text-2xl font-bold text-gray-900">
+                  {clinic.name}
+                </h5>
+                <p className="mb-3 text-gray-700">{clinic.description}</p>
+                <Link
+                  to={`/clinic-detail/${clinic.id}`}
+                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-yellow-600"
+                >
+                  Read More
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+        <Footer />
+      </>
+    );
+  }
 
   return (
     <>

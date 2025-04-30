@@ -1,5 +1,6 @@
 import { Link } from "react-router";
-import { malls } from "../outpatient-centers/OpcList";
+import opcData from "@/data/opcData.json";
+
 const Opc = () => {
   return (
     <div className="rounded-lg p-6 md:p-10 text-center bg-grey-50 dark:border-gray-700 shadow-xl mx-[16%] my-10">
@@ -7,13 +8,13 @@ const Opc = () => {
         Outpatient Clinics
       </h2>
       <div className="flex flex-col md:grid-cols-2 lg:flex-row lg:flex-wrap justify-center gap-4 text-gray-600 ">
-        {malls.map((mall) => (
+        {opcData.map((opc) => (
           <Link
-            key={mall.id}
-            to={`/outpatient-center/${mall.id}`}
+            key={opc.id}
+            to={`/outpatient-center/${opc.id}`}
             className=" p-2 text-center hover:underline"
           >
-            {mall.name}, {mall.location}
+            {opc.name}, {opc.location}
           </Link>
         ))}
       </div>

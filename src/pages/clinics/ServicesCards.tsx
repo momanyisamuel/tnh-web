@@ -35,6 +35,7 @@ const ServiceCards = () => {
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 {item.description}
               </p>
+
               <Link
                 to={`/service-detail/${item.id}`}
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-600 dark:bg-red-900 dark:hover:bg-red-900 dark:focus:ring-red-800 shadow-lg shadow-red-900/50 "

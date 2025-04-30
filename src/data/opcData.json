@@ -1,0 +1,232 @@
+[
+  {
+    "name": "Galleria Mall Outpatient Clinic",
+    "id": "galleria-opc",
+    "description": " The Nairobi Hospital Outpatient Clinic at Galleria Mall is part of the renowned Nairobi Hospital's network of healthcare facilities, offering high-quality medical services in a more accessible and convenient location for residents and visitors of the area. The outpatient clinic at Galleria is designed to provide a wide range of healthcare services for those who don’t require hospitalization but need medical consultations, diagnostics, and follow-up care. Galleria Mall clinic opens daily from 7am-7pm. With fully operational dispensing pharmacies, laboratory, X-ray, CT Scan and ultrasound.",
+    "contact": "+254 712 345678",
+    "email": "gallerianursing@nbihosp.org",
+    "location": "Lang'ata Road, Nairobi",
+    "accordionItems": {
+      "item-1": {
+        "title": "DENTAL SERVICES",
+        "Subject": "Monday, Wednesday, Friday: 8am-4pm Alternate Tuesday, Thursday and Saturday: 8am-4pm (on booking)"
+      },
+      "item-2": {
+        "title": "EAR NOSE & THROAT CLINIC",
+        "Subject": "Thursdays: 3:00pm - 4:00pm"
+      },
+      "item-3": {
+        "title": "ANTENATAL CLINIC, POSTNATAL & B GYNAECOLOGY CLINIC",
+        "Subject": "Tuesdays, Wednesdays & Thursday: 9:00am -1:00pm"
+      },
+      "item-4": {
+        "title": "PHYSIOTHERAPY",
+        "Subject": "Monday to Friday: 7:00am - 6:00pm & Saturday: 8:00am - 1:00pm"
+      },
+      "item-5": {
+        "title": "SURGICAL OUTPATIENT CLINIC (SOPC)",
+        "Subject": "Wednesdays 2.00pm-4.00pm"
+      },
+      "item-6": {
+        "title": "WELL BABY CLINIC",
+        "Subject": "Daily: 8:00am - 3:00pm"
+      },
+      "item-7": {
+        "title": "NUTRITION CLINIC",
+        "Subject": "Mondays 8.00am-4.00pm"
+      },
+      "item-8": {
+        "title": "FAMILY HEALTH CLINIC & MEDICAL CHECK-UP",
+        "Subject": "Fridays: 8:00am - 4:00pm"
+      },
+      "item-9": {
+        "title": "PAEDITRIC CLINICS",
+        "Subject": "Mondays 8.00am-2.00pm (General paeditrics & Paediatrics infectious diseases).\nTuesdays 9:00am-2:00pm\nWednesday-Friday 10.00am to 3.00pm\nSaturdays: 11:00am - 3.00pm (General paediatrics & Paediatrics endocrinology)"
+      }
+    }
+  },
+  {
+    "name": "Warwick Centre Outpatient Clinic",
+    "id": "galleria-opc",
+    "description": " The Nairobi Hospital Outpatient Clinic at Galleria Mall is part of the renowned Nairobi Hospital's network of healthcare facilities, offering high-quality medical services in a more accessible and convenient location for residents and visitors of the area. The outpatient clinic at Galleria is designed to provide a wide range of healthcare services for those who don’t require hospitalization but need medical consultations, diagnostics, and follow-up care. Galleria Mall clinic opens daily from 7am-7pm. With fully operational dispensing pharmacies, laboratory, X-ray, CT Scan and ultrasound.",
+    "contact": "+254 712 345678",
+    "email": "gallerianursing@nbihosp.org",
+    "location": "Lang'ata Road, Nairobi",
+    "accordionItems": {
+      "item-1": {
+        "title": "DENTAL SERVICES",
+        "Subject": "Monday, Wednesday, Friday: 8am-4pm Alternate Tuesday, Thursday and Saturday: 8am-4pm (on booking)"
+      },
+      "item-2": {
+        "title": "EAR NOSE & THROAT CLINIC",
+        "Subject": "Thursdays: 3:00pm - 4:00pm"
+      },
+      "item-3": {
+        "title": "ANTENATAL CLINIC, POSTNATAL & B GYNAECOLOGY CLINIC",
+        "Subject": "Tuesdays, Wednesdays & Thursday: 9:00am -1:00pm"
+      },
+      "item-4": {
+        "title": "PHYSIOTHERAPY",
+        "Subject": "Monday to Friday: 7:00am - 6:00pm & Saturday: 8:00am - 1:00pm"
+      },
+      "item-5": {
+        "title": "SURGICAL OUTPATIENT CLINIC (SOPC)",
+        "Subject": "Wednesdays 2.00pm-4.00pm"
+      },
+      "item-6": {
+        "title": "WELL BABY CLINIC",
+        "Subject": "Daily: 8:00am - 3:00pm"
+      },
+      "item-7": {
+        "title": "NUTRITION CLINIC",
+        "Subject": "Mondays 8.00am-4.00pm"
+      },
+      "item-8": {
+        "title": "FAMILY HEALTH CLINIC & MEDICAL CHECK-UP",
+        "Subject": "Fridays: 8:00am - 4:00pm"
+      },
+      "item-9": {
+        "title": "PAEDITRIC CLINICS",
+        "Subject": "Mondays 8.00am-2.00pm (General paeditrics & Paediatrics infectious diseases).\nTuesdays 9:00am-2:00pm\nWednesday-Friday 10.00am to 3.00pm\nSaturdays: 11:00am - 3.00pm (General paediatrics & Paediatrics endocrinology)"
+      }
+    }
+  },
+  {
+    "name": "Rosslyn Riviera Outpatient Clinic",
+    "id": "galleria-opc",
+    "description": " The Nairobi Hospital Outpatient Clinic at Galleria Mall is part of the renowned Nairobi Hospital's network of healthcare facilities, offering high-quality medical services in a more accessible and convenient location for residents and visitors of the area. The outpatient clinic at Galleria is designed to provide a wide range of healthcare services for those who don’t require hospitalization but need medical consultations, diagnostics, and follow-up care. Galleria Mall clinic opens daily from 7am-7pm. With fully operational dispensing pharmacies, laboratory, X-ray, CT Scan and ultrasound.",
+    "contact": "+254 712 345678",
+    "email": "gallerianursing@nbihosp.org",
+    "location": "Lang'ata Road, Nairobi",
+    "accordionItems": {
+      "item-1": {
+        "title": "DENTAL SERVICES",
+        "Subject": "Monday, Wednesday, Friday: 8am-4pm Alternate Tuesday, Thursday and Saturday: 8am-4pm (on booking)"
+      },
+      "item-2": {
+        "title": "EAR NOSE & THROAT CLINIC",
+        "Subject": "Thursdays: 3:00pm - 4:00pm"
+      },
+      "item-3": {
+        "title": "ANTENATAL CLINIC, POSTNATAL & B GYNAECOLOGY CLINIC",
+        "Subject": "Tuesdays, Wednesdays & Thursday: 9:00am -1:00pm"
+      },
+      "item-4": {
+        "title": "PHYSIOTHERAPY",
+        "Subject": "Monday to Friday: 7:00am - 6:00pm & Saturday: 8:00am - 1:00pm"
+      },
+      "item-5": {
+        "title": "SURGICAL OUTPATIENT CLINIC (SOPC)",
+        "Subject": "Wednesdays 2.00pm-4.00pm"
+      },
+      "item-6": {
+        "title": "WELL BABY CLINIC",
+        "Subject": "Daily: 8:00am - 3:00pm"
+      },
+      "item-7": {
+        "title": "NUTRITION CLINIC",
+        "Subject": "Mondays 8.00am-4.00pm"
+      },
+      "item-8": {
+        "title": "FAMILY HEALTH CLINIC & MEDICAL CHECK-UP",
+        "Subject": "Fridays: 8:00am - 4:00pm"
+      },
+      "item-9": {
+        "title": "PAEDITRIC CLINICS",
+        "Subject": "Mondays 8.00am-2.00pm (General paeditrics & Paediatrics infectious diseases).\nTuesdays 9:00am-2:00pm\nWednesday-Friday 10.00am to 3.00pm\nSaturdays: 11:00am - 3.00pm (General paediatrics & Paediatrics endocrinology)"
+      }
+    }
+  },
+  {
+    "name": "Kaimbu Outpatient Clinic",
+    "id": "galleria-opc",
+    "description": " The Nairobi Hospital Outpatient Clinic at Galleria Mall is part of the renowned Nairobi Hospital's network of healthcare facilities, offering high-quality medical services in a more accessible and convenient location for residents and visitors of the area. The outpatient clinic at Galleria is designed to provide a wide range of healthcare services for those who don’t require hospitalization but need medical consultations, diagnostics, and follow-up care. Galleria Mall clinic opens daily from 7am-7pm. With fully operational dispensing pharmacies, laboratory, X-ray, CT Scan and ultrasound.",
+    "contact": "+254 712 345678",
+    "email": "gallerianursing@nbihosp.org",
+    "location": "Lang'ata Road, Nairobi",
+    "accordionItems": {
+      "item-1": {
+        "title": "DENTAL SERVICES",
+        "Subject": "Monday, Wednesday, Friday: 8am-4pm Alternate Tuesday, Thursday and Saturday: 8am-4pm (on booking)"
+      },
+      "item-2": {
+        "title": "EAR NOSE & THROAT CLINIC",
+        "Subject": "Thursdays: 3:00pm - 4:00pm"
+      },
+      "item-3": {
+        "title": "ANTENATAL CLINIC, POSTNATAL & B GYNAECOLOGY CLINIC",
+        "Subject": "Tuesdays, Wednesdays & Thursday: 9:00am -1:00pm"
+      },
+      "item-4": {
+        "title": "PHYSIOTHERAPY",
+        "Subject": "Monday to Friday: 7:00am - 6:00pm & Saturday: 8:00am - 1:00pm"
+      },
+      "item-5": {
+        "title": "SURGICAL OUTPATIENT CLINIC (SOPC)",
+        "Subject": "Wednesdays 2.00pm-4.00pm"
+      },
+      "item-6": {
+        "title": "WELL BABY CLINIC",
+        "Subject": "Daily: 8:00am - 3:00pm"
+      },
+      "item-7": {
+        "title": "NUTRITION CLINIC",
+        "Subject": "Mondays 8.00am-4.00pm"
+      },
+      "item-8": {
+        "title": "FAMILY HEALTH CLINIC & MEDICAL CHECK-UP",
+        "Subject": "Fridays: 8:00am - 4:00pm"
+      },
+      "item-9": {
+        "title": "PAEDITRIC CLINICS",
+        "Subject": "Mondays 8.00am-2.00pm (General paeditrics & Paediatrics infectious diseases).\nTuesdays 9:00am-2:00pm\nWednesday-Friday 10.00am to 3.00pm\nSaturdays: 11:00am - 3.00pm (General paediatrics & Paediatrics endocrinology)"
+      }
+    }
+  },
+  {
+    "name": "Southfield Mall Outpatient Clinic",
+    "id": "galleria-opc",
+    "description": " The Nairobi Hospital Outpatient Clinic at Galleria Mall is part of the renowned Nairobi Hospital's network of healthcare facilities, offering high-quality medical services in a more accessible and convenient location for residents and visitors of the area. The outpatient clinic at Galleria is designed to provide a wide range of healthcare services for those who don’t require hospitalization but need medical consultations, diagnostics, and follow-up care. Galleria Mall clinic opens daily from 7am-7pm. With fully operational dispensing pharmacies, laboratory, X-ray, CT Scan and ultrasound.",
+    "contact": "+254 712 345678",
+    "email": "gallerianursing@nbihosp.org",
+    "location": "Lang'ata Road, Nairobi",
+    "accordionItems": {
+      "item-1": {
+        "title": "DENTAL SERVICES",
+        "Subject": "Monday, Wednesday, Friday: 8am-4pm Alternate Tuesday, Thursday and Saturday: 8am-4pm (on booking)"
+      },
+      "item-2": {
+        "title": "EAR NOSE & THROAT CLINIC",
+        "Subject": "Thursdays: 3:00pm - 4:00pm"
+      },
+      "item-3": {
+        "title": "ANTENATAL CLINIC, POSTNATAL & B GYNAECOLOGY CLINIC",
+        "Subject": "Tuesdays, Wednesdays & Thursday: 9:00am -1:00pm"
+      },
+      "item-4": {
+        "title": "PHYSIOTHERAPY",
+        "Subject": "Monday to Friday: 7:00am - 6:00pm & Saturday: 8:00am - 1:00pm"
+      },
+      "item-5": {
+        "title": "SURGICAL OUTPATIENT CLINIC (SOPC)",
+        "Subject": "Wednesdays 2.00pm-4.00pm"
+      },
+      "item-6": {
+        "title": "WELL BABY CLINIC",
+        "Subject": "Daily: 8:00am - 3:00pm"
+      },
+      "item-7": {
+        "title": "NUTRITION CLINIC",
+        "Subject": "Mondays 8.00am-4.00pm"
+      },
+      "item-8": {
+        "title": "FAMILY HEALTH CLINIC & MEDICAL CHECK-UP",
+        "Subject": "Fridays: 8:00am - 4:00pm"
+      },
+      "item-9": {
+        "title": "PAEDITRIC CLINICS",
+        "Subject": "Mondays 8.00am-2.00pm (General paeditrics & Paediatrics infectious diseases).\nTuesdays 9:00am-2:00pm\nWednesday-Friday 10.00am to 3.00pm\nSaturdays: 11:00am - 3.00pm (General paediatrics & Paediatrics endocrinology)"
+      }
+    }
+  }
+]
