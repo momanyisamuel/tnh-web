@@ -1,5 +1,5 @@
 import { lazyLoad } from "@/components/layout/lazy-load";
-import path from "path";
+
 
 export type UIRoutesType = {
   name: string;

@@ -35,7 +35,7 @@ const MemberPage = () => {
                     href="mailto:emilysmith@example.com"
                     className="text-blue-600 font-medium"
                   >
-                    emilysmith@example.com
+                    hi@nbihosp.org
                   </a>
                 </p>
                 <p>
@@ -44,7 +44,7 @@ const MemberPage = () => {
                     href="tel:+22001110206"
                     className="text-blue-600 font-medium"
                   >
-                    +2 200 111 0206
+                    020 0000000
                   </a>
                 </p>
               </div>
@@ -65,7 +65,7 @@ const MemberPage = () => {
 
           <div className="mt-12">
             <h2 className="text-3xl font-semibold text-gray-900 mb-4">
-              About Psychologist
+              About {user.name}
             </h2>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               {user.description.slice(1).map((para, i) => (
