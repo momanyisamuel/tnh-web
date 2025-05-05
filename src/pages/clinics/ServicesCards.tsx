@@ -3,32 +3,32 @@ import { useState } from "react";
 import { Link } from "react-router";
 import clinicalServices from "@/data/clinicalServices.json";
 
-type AccordionItem = {
-  title: string;
-  Subject: string;
-};
+// type AccordionItem = {
+//   title: string;
+//   Subject: string;
+// };
 
-type Clinic = {
-  id: string;
-  name: string;
-  description: string;
-  image: {
-    src: string;
-    alt: string;
-  };
-};
+// type Clinic = {
+//   id: string;
+//   name: string;
+//   description: string;
+//   image: {
+//     src: string;
+//     alt: string;
+//   };
+// };
 
-type Service = {
-  id: string;
-  name: string;
-  description: string;
-  image: {
-    src: string;
-    alt: string;
-  };
-  accordionItems?: Record<string, AccordionItem>;
-  clinics?: Clinic[];
-};
+// type Service = {
+//   id: string;
+//   name: string;
+//   description: string;
+//   image: {
+//     src: string;
+//     alt: string;
+//   };
+//   accordionItems?: Record<string, AccordionItem>;
+//   clinics?: Clinic[];
+// };
 
 // Cardtitles
 const ServiceCards = () => {
