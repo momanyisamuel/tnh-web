@@ -1,5 +1,4 @@
 import AnimatedCounter from "@/components/Animatedcounter";
-import { motion } from "framer-motion";
 
 const Metrixs = () => {
   return (
