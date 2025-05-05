@@ -3,7 +3,10 @@ import opcData from "@/data/opcData.json";
 
 const Opc = () => {
   return (
-    <div className="rounded-lg p-6 md:p-10 text-center bg-grey-50 dark:border-gray-700 shadow-xl mx-[16%] my-10">
+    <div
+      className="rounded-lg p-6 md:p-10 text-center bg-grey-50 dark:border-gray-700 shadow-xl backdrop-blur-md
+ mx-[16%] my-10"
+    >
       <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-red-900">
         Outpatient Clinics
       </h2>

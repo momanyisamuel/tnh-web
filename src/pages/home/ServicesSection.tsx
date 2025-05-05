@@ -2,19 +2,34 @@ import { Pill } from "lucide-react";
 import { FlaskConical } from "lucide-react";
 import { Radiation } from "lucide-react";
 import { Link } from "react-router";
+import { motion } from "framer-motion";
+
+// Define the slideUp animation variants
+const slideUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const ServicesSection = () => {
   return (
     <div className="container mx-auto px-4 py-10">
       <div className="flex justify-center items-center mb-8">
         <div className="">
-          <h1 className="text-3xl text-center font-serif font-bold text-red-900">
-            Clinical Services
-          </h1>
-          <p className="text-black text-center mt-2">
-            Psychologists employ a variety of research methods, clinical
-            techniques.
-          </p>
+          <motion.div
+            variants={slideUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <h1 className="text-3xl text-center font-serif font-bold text-red-900">
+              Clinical Services
+            </h1>
+            <p className="text-black text-center mt-2">
+              Psychologists employ a variety of research methods, clinical
+              techniques.
+            </p>
+          </motion.div>
         </div>
         <button className="bg-red-900 text-white mx-15 hidden md:block px-4 py-2 rounded-md font-semibold">
           <Link to={`/clinics`}>All Services</Link>
@@ -22,6 +37,14 @@ const ServicesSection = () => {
       </div>
 
       <div className="flex flex-col justify-center items-center space-y-6">
+      <motion.div
+        variants={slideUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        
         <Link to={`/service-detail/pharmacy-services`}>
           <div className="md:flex items-start bg-white p-6 py-10 rounded-lg transition duration-300 hover:bg-yellow-400 hover:shadow-md cursor-pointer">
             <div className="flex items-center mr-12">
@@ -31,7 +54,7 @@ const ServicesSection = () => {
               </h2>
             </div>
             <div>
-              <p className="text-base text-gray-700 mt-1 mx-12 max-w-lg">
+              <p className="text-base text-gray-700 mt-1 mx-12  max-w-lg">
                 Depression is a mood disorder characterized by persistent
                 feelings of sadness, hopelessness, and a lack of interest or
                 pleasure in daily activities.
@@ -58,6 +81,7 @@ const ServicesSection = () => {
             </div>
           </div>
           <hr />
+           
         </Link>
 
         <Link to={`/service-detail/radiology-services`}>
@@ -81,6 +105,7 @@ const ServicesSection = () => {
         <button className="bg-red-900 text-white mx-15 block px-4 py-2 rounded-md font-semibold md:hidden">
           All Services
         </button>
+        </motion.div>
       </div>
     </div>
   );
