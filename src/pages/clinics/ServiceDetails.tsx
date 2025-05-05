@@ -14,6 +14,11 @@ type AccordionItem = {
   Subject: string;
 };
 
+type Contact = {
+  phone: string;
+  location: string;
+};
+
 type Clinic = {
   id: string;
   name: string;
@@ -34,6 +39,7 @@ type Service = {
   };
   accordionItems?: Record<string, AccordionItem>;
   clinics?: Clinic[];
+  contact?: Contact;
 };
 
 const ServiceDetails = () => {
@@ -181,8 +187,8 @@ const ServiceDetails = () => {
         <div className="lg:w-[300px] w-full bg-red-100 h-min rounded-xl p-6 shadow-md text-sm text-gray-800">
           <h3 className="font-semibold mb-4">Have Additional Questions?</h3>
           <ul className="space-y-2">
-            <li>📍 Argwing Kodhek Road,Nairobi</li>
-            <li>📞 +254 703082000</li>
+            <li>📍 {service.contact.location}</li>
+            <li>📞 {service.contact.phone}</li>
             <li>✉️ customer.service@nbihosp.org</li>
           </ul>
           <button className="mt-4 text-green-700 hover:underline">

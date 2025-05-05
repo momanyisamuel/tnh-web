@@ -24,6 +24,11 @@
         "title": "What payment methods are accepted?",
         "Subject": "We accept cash, credit/debit cards, UPI payments, and mobile wallets."
       }
+      ,
+      "contact-details": {
+        "phone number": "+254 20 283 2000",
+        "location": "Nairobi Hospital, Ground floor, Main Hospital"
+      }
     }
   },
   {
@@ -84,6 +89,11 @@
         "title": "Do you offer radiology services for children or pregnant patients?",
         "Subject": "Yes, we have pediatric imaging services and follow strict safety protocols for pregnant patients. Inform our staff ahead of time if you're expecting."
       }
+      ,
+      "contact-details": {
+        "phone number": "+254 454544646",
+        "location": "Nairobi Hospital, Ground Floor, Main Hospital"
+      }
     }
   },
   {
@@ -111,6 +121,11 @@
       "item-4": {
         "title": "Do you accept health insurance for endoscopy procedures?",
         "Subject": "Yes, we accept most major insurance plans. Please check with the billing department for coverage details specific to your plan."
+      }
+      ,
+      "contact-details": {
+        "phone number": "+254 32322432",
+        "location": "Nairobi Hospital, 3rd Floor, Main Hospital"
       }
     }
   },
@@ -140,6 +155,11 @@
         "title": "Do you accept health insurance for endoscopy procedures?",
         "Subject": "Yes, we accept most major insurance plans. Please check with the billing department for coverage details specific to your plan."
       }
+      ,
+      "contact-details": {
+        "phone number": "+254 354535453",
+        "location": "Nairobi Hospital, 2nd Floor, Main Hospital"
+      }
     }
   },
 
@@ -161,6 +181,11 @@
         "title": "How do I schedule an appointment for physical medicine services?",
         "Subject": "You can schedule an appointment by calling the PMR Department directly at [insert phone number] or by visiting our front desk."
       }
+      ,
+      "contact-details": {
+        "phone number": "+254 34576757755",
+        "location": "Nairobi Hospital, 1st Floor, Main Hospital"
+      }
     }
   },
   {
@@ -171,6 +196,11 @@
     "name": "Psychosocial department",
     "id": "psychosocial-ervices",
     "description": "The Antenatal Clinic is administered by Obstetricians/Gynecologists and experienced midwives who provide comprehensive care to mothers from conception, all through pregnancy until delivery."
+    ,
+      "contact-details": {
+        "phone number": "+254 20 283 2000",
+        "location": "Nairobi Hospital, 1st Floor, Main Hospital"
+      }
   },
   {
     "image": {
@@ -253,8 +283,8 @@
             "title": "Do you perform COVID-19, dengue, and other infectious disease tests?",
             "Subject": "Yes, we perform a wide range of infectious disease screenings including COVID-19 RT-PCR, dengue, malaria, and more."
           },
-          "contact-details": {
-            "phone number": "+254 20 283 2000",
+          "contact": {
+            "phone": "+254 20 283 2000",
             "location": "Nairobi Hospital, 1st Floor, Main Hospital"
           }
         }
