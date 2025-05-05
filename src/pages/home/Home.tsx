@@ -8,6 +8,7 @@ import Opc from "./opc";
 import Features from "./features";
 import InsuranceSlider from "./InsuranceSlider";
 import Metrixs from "./Metrixs";
+
 type HomeProps = object;
 
 const Home: FC<HomeProps> = () => {

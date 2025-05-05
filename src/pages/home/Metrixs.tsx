@@ -1,3 +1,6 @@
+import AnimatedCounter from "@/components/Animatedcounter";
+import { motion } from "framer-motion";
+
 const Metrixs = () => {
   return (
     <div className="max-w-6xl mx-[5%] md:mx-auto px-4 py-12 grid md:grid-cols-2 gap-10 items-center">
@@ -21,19 +24,21 @@ const Metrixs = () => {
 
         <div className="space-y-4">
           <div>
-            <span className="text-3xl font-bold text-red-900">68%</span>
-            <p className="text-gray-600">
-              Educational workshops and support groups may be organized to
-              address specific topics or provide additional resources.
+            <AnimatedCounter targetNumber={25000} suffix="+" />
+            <p className="text-gray-600 mt-4">
+              Outpatient visitors receive care without overnight admission. This
+              includes consultations, lab tests, and minor procedures. We serve
+              thousands monthly with fast, expert care.
             </p>
           </div>
 
           <div>
-            <span className="text-3xl font-bold text-red-900">17%</span>
-            <p className="text-gray-600">
-              Our centers adhere to strict confidentiality standards, ensuring
-              that client information is kept private within legal and ethical
-              bounds.
+            <AnimatedCounter targetNumber={74} suffix="%" />
+            <p className="text-gray-600 mt-4">
+              Our patient satisfaction rate reflects the quality, compassion,
+              and attention we provide. Measured through post-visit surveys, it
+              shows how well we meet expectations across services. High
+              satisfaction signals trust, comfort, and confidence in our care.
             </p>
           </div>
         </div>

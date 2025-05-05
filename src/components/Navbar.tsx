@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <nav className="bg-white h-[80px] sm:px-6 lg:px-50 py-3 flex items-center justify-between sticky top-0 z-50 shadow-lg ">
+    <nav className="bg-white/90 backdrop-blur-md h-[80px] sm:px-6 lg:px-50 py-3 flex items-center justify-between sticky top-0 z-50 shadow-lg ">
       {/* Logo and Text on the Left */}
       <div className="flex items-center">
         <Link to="/" className="flex items-center">
