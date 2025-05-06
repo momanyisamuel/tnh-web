@@ -7,7 +7,8 @@ import Services from "./ClinicalServices";
 import Opc from "./opc";
 import Features from "./features";
 import InsuranceSlider from "./InsuranceSlider";
-import Metrixs from "./Metrixs";
+import ServicesSection from "./ServicesSection";
+import Metrics from "./Metrics";
 
 type HomeProps = object;
 
@@ -17,8 +18,9 @@ const Home: FC<HomeProps> = () => {
       <Navbar />
       <Hero />
       <Features />
-      <Metrixs />
-      <Services />
+      <Metrics />
+      <ServicesSection />
+      {/* <Services /> */}
       <Opc />
       {/* <AboutSection /> */}
       <InsuranceSlider />

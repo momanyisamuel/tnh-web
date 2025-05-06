@@ -6,7 +6,7 @@ import { Link } from "react-router";
 
 const Hero = () => {
   return (
-    <section className="bg-red-900 mt-8 text-white p-5 md:p-16 rounded-2xl mx-[4%] md:mx-[10%] w-auto">
+    <section className="bg-red-900 mt-8 text-white p-5  md:p-16 rounded-2xl mx-[4%] md:mx-[10%] w-auto">
       <div className="grid md:grid-cols-2 gap-6">
         {/* Text Content */}
         <div className="flex flex-col justify-center space-y-4">
@@ -32,25 +32,25 @@ const Hero = () => {
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 grid-rows-3 gap-2  ">
           <img
             src={care1}
-            className="rounded-lg w-full h-32 object-cover"
+            className="rounded-lg w-full h-full object-cover col-span-1 row-span-1"
             alt="Image 1"
           />
           <img
             src={care2}
-            className="rounded-lg w-full h-64 object-cover col-span-1 row-span-2"
+            className="rounded-lg w-full h-full object-cover col-span-1 row-span-2"
             alt="Image 2"
           />
           <img
             src={care3}
-            className="rounded-lg w-full h-64 object-cover col-span-1 row-span-2"
+            className="rounded-lg w-full h-full object-cover col-span-1 row-span-2"
             alt="Image 3"
           />
           <img
             src={care4}
-            className="rounded-lg w-full h-32 object-cover"
+            className="rounded-lg w-full h-full object-cover col-span-1 row-span-1"
             alt="Image 4"
           />
         </div>

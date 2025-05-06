@@ -6,7 +6,7 @@ const slideUp = {
   visible: { opacity: 1, y: 0 },
 };
 
-const Metrixs = () => {
+const Metrics = () => {
   return (
     <div className="max-w-6xl mx-[5%] md:mx-auto px-4 py-12 grid md:grid-cols-2 gap-10 items-center">
       <motion.div
@@ -77,4 +77,4 @@ const Metrixs = () => {
   );
 };
 
-export default Metrixs;
+export default Metrics;
