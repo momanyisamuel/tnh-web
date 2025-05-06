@@ -11,7 +11,7 @@ const Opc = () => {
         Outpatient Clinics
       </h2>
       <div className="flex flex-col md:grid-cols-2 lg:flex-row lg:flex-wrap justify-center gap-4 text-black ">
-        {malls.map((mall) => (
+        {opcData.map((opc) => (
           <Link
             key={opc.id}
             to={`/outpatient-center/${opc.id}`}
