@@ -64,7 +64,11 @@ export const NavigationTabs: React.FC = () => {
           />
         )}
         {activeTab === "history" && (
-          <Section ref={historyRef} title="History" content="The Nairobi Hospital has a rich history. The foundation stone of what was to become the leading provider of healthcare services in the East African region, was laid on the morning of 20th October 1952 by none other than Sir Evelyn Baring, the then Governor of Kenya Colony. This is the day our independence heroes were rounded up and the fight for self-determination began in earnest. At that moment of darkness in the history of our country, and in spite of the events of the night before, The Nairobi Hospital was born. Indeed, this historical twist resonates well with the institution’s guiding motto ‘Lux in Tenebris’ – Light in Darkness. Opening its doors in 1954 as the European Hospital, the institution has grown from humble beginnings to a modern high-technology facility with more than 363 bed-capacity, six outpatient centers and a global medivac centre. In 1956, The Nairobi Hospital’s Cicely McDonnell School of Nursing was established. It was aptly named after Cicely McDonnell who had made immense personal contribution to the welfare and health Kenyans and set high professional standards for maternity nursing in Nairobi. Indeed, most graduates from the School of Nursing are absorbed into The Nairobi Hospital’s team. The combination of highly skilled medical specialists and modern medical and non-medical technology has placed the hospital in a position to undertake a wide range of routine and complex investigations and procedures including Open Heart Surgery, Kidney Transplants, Trauma Care, Orthopeadic Surgery, Neurosurgery, Laparoscopic Surgery, and Cancer Therapy among others" />
+          <Section
+            ref={historyRef}
+            title="History"
+            content="The Nairobi Hospital has a rich history. The foundation stone of what was to become the leading provider of healthcare services in the East African region, was laid on the morning of 20th October 1952 by none other than Sir Evelyn Baring, the then Governor of Kenya Colony. This is the day our independence heroes were rounded up and the fight for self-determination began in earnest. At that moment of darkness in the history of our country, and in spite of the events of the night before, The Nairobi Hospital was born. Indeed, this historical twist resonates well with the institution’s guiding motto ‘Lux in Tenebris’ – Light in Darkness. Opening its doors in 1954 as the European Hospital, the institution has grown from humble beginnings to a modern high-technology facility with more than 363 bed-capacity, six outpatient centers and a global medivac centre. In 1956, The Nairobi Hospital’s Cicely McDonnell School of Nursing was established. It was aptly named after Cicely McDonnell who had made immense personal contribution to the welfare and health Kenyans and set high professional standards for maternity nursing in Nairobi. Indeed, most graduates from the School of Nursing are absorbed into The Nairobi Hospital’s team. The combination of highly skilled medical specialists and modern medical and non-medical technology has placed the hospital in a position to undertake a wide range of routine and complex investigations and procedures including Open Heart Surgery, Kidney Transplants, Trauma Care, Orthopeadic Surgery, Neurosurgery, Laparoscopic Surgery, and Cancer Therapy among others"
+          />
         )}
         {activeTab === "board" && (
           <Section
@@ -120,7 +124,6 @@ interface SectionProps {
   content: string;
 }
 
-// Fixing the typing issue in forwardRef
 const Section = React.forwardRef<HTMLDivElement, SectionProps>(
   ({ title, content }, ref) => {
     return (

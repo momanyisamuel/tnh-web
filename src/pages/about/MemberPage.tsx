@@ -1,5 +1,3 @@
-// React + Tailwind version of Psychologist Profile
-
 import Navbar from "@/components/Navbar";
 import { teamMembers } from "./SeniorManagement";
 import Footer from "@/components/footer";

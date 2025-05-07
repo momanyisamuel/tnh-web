@@ -17,18 +17,39 @@ type TeamMember = {
 // layout for the whole page
 const TeamPage: React.FC<TeamPageProps> = ({ title, description, members }) => {
   return (
-    <section className="py-12 px-4 bg-gray-100">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-red-900 mb-2">{title}</h2>
-        <hr className=" h-1 bg-red-900 rounded-full mb-6" />
-        <p className="text-gray-600 mb-10 mt-4">{description} </p>
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {members.map((member, index) => (
-            <TeamCard key={index} {...member} />
-          ))}
+    <>
+      <section className="bg-red-900 text-white p-5 md:p-16  ">
+        <div className="grid md:grid-cols gap-2 lg:px-36">
+          {/* Text Content */}
+          <div className="flex flex-col justify-center space-y-4 max-w-xl">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+              Our Team
+            </h1>
+            <p className="text-lg md:text-xl">Our team, our team, our team</p>
+          </div>
+
+          {/* <div className="">
+            <img
+              src={service.image.src}
+              className="rounded-lg  object-fill h-48 w-96 "
+              alt="Image 1"
+            />
+          </div> */}
         </div>
-      </div>
-    </section>
+      </section>
+      <section className="py-12 px-4 bg-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-red-900 mb-2">{title}</h2>
+          <hr className=" h-1 bg-red-900 rounded-full mb-6" />
+          <p className="text-gray-600 mb-10 mt-4">{description} </p>
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {members.map((member, index) => (
+              <TeamCard key={index} {...member} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

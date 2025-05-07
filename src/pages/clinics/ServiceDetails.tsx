@@ -8,6 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 type AccordionItem = {
   title: string;
@@ -185,17 +186,30 @@ const ServiceDetails = () => {
 
         {/* Contact Card */}
         <div className="lg:w-[300px] w-full bg-red-100 h-min rounded-xl p-6 shadow-md text-sm text-gray-800">
-          <h3 className="font-semibold mb-4">Have Additional Questions?</h3>
-          {service.contact && (
-            <ul className="space-y-2">
-              <li>📍 {service.contact.location}</li>
-              <li>📞 {service.contact.phone}</li>
-              <li>✉️ customer.service@nbihosp.org</li>
-            </ul>
-          )}
-          <button className="mt-4 text-green-700 hover:underline">
-            Contact Us →
-          </button>
+          <h3 className="font-semibold mb-4 text-xl">
+            Have Additional Questions?
+          </h3>
+
+          <div className="flex flex-col space-y-2 items-start text-lg">
+            <span className="flex items-center justify-center gap-2">
+              <Phone className="h-5 w-5 text-red-900" aria-label="Phone icon" />{" "}
+              <a href="tel:+254 703082000">+254 703082000</a>
+            </span>
+            <span className="flex items-center justify-center gap-2">
+              <Mail className="h-5 w-5 text-red-900" aria-label="Mail icon" />
+              <a href="mailto: hosp@nbihosp.org"> hosp@nbihosp.org</a>
+            </span>
+            <div className="flex items-center justify-center gap-2">
+              <MapPin
+                className="h-5 w-5 text-red-900 space-x-2"
+                aria-label="Location icon"
+              />{" "}
+              Argwings Kodhek Road, Nairobi
+            </div>
+            <Link to="#" className="mt-4 text-green-700 hover:underline">
+              Contact Us →
+            </Link>
+          </div>
         </div>
       </div>
       <Footer />
