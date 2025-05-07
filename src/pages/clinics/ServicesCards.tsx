@@ -1,7 +1,7 @@
-import { useState } from "react";
-
 import { Link } from "react-router";
 import clinicalServices from "@/data/clinicalServices.json";
+import ContactForm from "@/components/ContactForm";
+import FAQs from "./FAQs";
 
 // type AccordionItem = {
 //   title: string;
@@ -32,16 +32,17 @@ import clinicalServices from "@/data/clinicalServices.json";
 
 // Cardtitles
 const ServiceCards = () => {
-  const [VisibleServices, setVisibleServices] = useState(4);
-  const handleLoadMore = () => {
-    setVisibleServices((prev) => prev + 4);
-  };
+  //const [VisibleServices, setVisibleServices] = useState(4);
+  // const handleLoadMore = () => {
+  //   setVisibleServices((prev) => prev + 4);
+  // };
   return (
     <div className="flex flex-col items-center bg-gray-100 py-10 justify-center mt-8">
       {/* <h1 className="font-bold text-4xl my-10">Clinical Services</h1> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-[5%] gap-6 justify-center">
-        {clinicalServices.slice(0, VisibleServices).map((item) => (
+        {/* {clinicalServices.slice(0, VisibleServices).map((item) => ( */}
+        {clinicalServices.map((item) => (
           <div
             key={item.name}
             className="max-w-xl bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-2xl border-y-yellow-600"
@@ -73,14 +74,16 @@ const ServiceCards = () => {
           </div>
         ))}
       </div>
-      {clinicalServices.length > VisibleServices && (
+      {/* {clinicalServices.length > VisibleServices && (
         <button
           onClick={handleLoadMore}
           className="mt-4 px-4 py-2 text-white bg-yellow-600 rounded-lg hover:bg-red-900"
         >
           More Services
         </button>
-      )}
+      )} */}
+      <ContactForm />
+      <FAQs />
     </div>
   );
 };
