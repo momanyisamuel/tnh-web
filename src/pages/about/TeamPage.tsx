@@ -39,9 +39,11 @@ const TeamPage: React.FC<TeamPageProps> = ({ title, description, members }) => {
       </section>
       <section className="py-12 px-4 bg-gray-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-red-900 mb-2">{title}</h2>
+          <div className="flex space-x-10">
+            <h2 className="text-3xl font-bold text-red-900 mb-2">{title}</h2>
+            <p className="text-gray-600 mb-10 mt-4">{description} </p>
+          </div>
           <hr className=" h-1 bg-red-900 rounded-full mb-6" />
-          <p className="text-gray-600 mb-10 mt-4">{description} </p>
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {members.map((member, index) => (
               <TeamCard key={index} {...member} />

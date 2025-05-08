@@ -54,7 +54,7 @@ export default function FAQs() {
                 key={index}
                 value={`item-${index}`}
               >
-                <AccordionTrigger className="text-xl p-3 rounded-2xl text-white bg-rose-800 font-bold">
+                <AccordionTrigger className="text-xl p-3 rounded-2xl text-white bg-rose-800 font-semibold">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-lg ">

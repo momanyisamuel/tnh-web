@@ -9,6 +9,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { FaClock, FaPhoneAlt } from "react-icons/fa";
 
 type AccordionItem = {
   title: string;
@@ -160,12 +161,81 @@ const ServiceDetails = () => {
               process emotions...
             </p>
           </div>
-
           <img
             src={service.image.src}
             alt={service.image.alt}
             className="w-full rounded-xl shadow-md object-cover max-h-[300px]"
           />
+
+          {/* Working Hours Section*/}
+          <section className="bg-gray-100 py-12 px-6 md:px-16 mt-8 rounded-xl mx-auto max-w-4xl shadow-md">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-gray-800">
+                Working Hours
+              </h2>
+              <p className="text-lg text-gray-600 mt-2">
+                We are available to assist you with medical services during
+                these hours:
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <FaClock className="text-red-900 text-3xl" />
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-700">
+                      Regular Hours
+                    </h3>
+                    <ul className="text-lg text-gray-600 mt-2">
+                      <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+                      <li>Saturday: 9:00 AM - 4:00 PM</li>
+                      <li>Sunday: Closed</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-3">
+                  <FaClock className="text-yellow-600 text-3xl" />
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-700">
+                      Emergency Services
+                    </h3>
+                    <p className="text-lg text-gray-600 mt-2">
+                      24/7 Availability
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <FaPhoneAlt className="text-green-600 text-3xl" />
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-700">
+                      Phone Number
+                    </h3>
+                    <a
+                      href="tel:+254 703082000"
+                      className="text-lg text-gray-600 mt-2"
+                    >
+                      +254 703082000
+                    </a>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-700">
+                    Online Appointment Booking
+                  </h3>
+                  <p className="text-lg text-gray-600 mt-2">
+                    You can book an appointment online through our website or
+                    call us directly for assistance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
           {/* Accordion */}
           <div className="mt-8">
@@ -174,8 +244,14 @@ const ServiceDetails = () => {
                 Object.keys(service.accordionItems).map((key, index) => {
                   const item = service.accordionItems![key];
                   return (
-                    <AccordionItem key={index} value={`item-${index}`}>
-                      <AccordionTrigger>{item.title}</AccordionTrigger>
+                    <AccordionItem
+                      className="shadow-lg p-3"
+                      key={index}
+                      value={`item-${index}`}
+                    >
+                      <AccordionTrigger className=" rounded-3xl text-xl">
+                        {item.title}
+                      </AccordionTrigger>
                       <AccordionContent>{item.Subject}</AccordionContent>
                     </AccordionItem>
                   );
@@ -212,6 +288,43 @@ const ServiceDetails = () => {
           </div>
         </div>
       </div>
+      <section className="bg-green-50 py-12 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-center mb-8">
+            <div>
+              <h2 className="text-4xl font-bold text-green-900">
+                Other Services
+              </h2>
+            </div>
+            <button className="bg-red-900 text-white py-2 px-4 rounded-lg shadow hover:bg-yellow-600">
+              All Services
+            </button>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {clinicalServices.map((service, index) => (
+              <div key={index} className="bg-white rounded-xl shadow p-4">
+                <img
+                  src={service.image.src}
+                  alt={service.image.alt}
+                  className="rounded-lg mb-4 h-64 w-full object-cover"
+                />
+                <h3 className="text-2xl font-semibold text-gray-700">
+                  {service.name}
+                </h3>
+                <p className="text-gray-700 mt-2">{service.description}</p>
+                <a
+                  href="#"
+                  className="inline-block mt-4 text-gray-700 font-medium hover:underline"
+                >
+                  Learn More →
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
