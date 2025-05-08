@@ -1,7 +1,6 @@
 import { Link } from "react-router";
 import clinicalServices from "@/data/clinicalServices.json";
-import ContactForm from "@/components/ContactForm";
-import FAQs from "./FAQs";
+
 
 // type AccordionItem = {
 //   title: string;
@@ -82,8 +81,7 @@ const ServiceCards = () => {
           More Services
         </button>
       )} */}
-      <ContactForm />
-      <FAQs />
+     
     </div>
   );
 };

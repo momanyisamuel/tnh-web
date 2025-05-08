@@ -9,7 +9,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Phone, Mail, MapPin } from "lucide-react";
-import { FaClock, FaPhoneAlt } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
 
 type AccordionItem = {
   title: string;
@@ -54,10 +54,12 @@ const ServiceDetails = () => {
     return (
       <div className="text-center mt-10 text-red-600">Service not found.</div>
     );
+
   if (service.clinics && service.clinics.length > 0) {
     return (
       <>
         <Navbar />
+
         <section className="bg-red-900 text-white p-5 md:p-16">
           <div className="grid md:grid-cols gap-2 lg:px-36">
             <div className="flex flex-col justify-center space-y-4 max-w-xl">
@@ -85,7 +87,7 @@ const ServiceDetails = () => {
                 </h5>
                 <p className="mb-3 text-gray-700">{clinic.description}</p>
                 <Link
-                  to={`/clinic-detail/${clinic.id}`}
+                  to={`/service-detail/${clinic.id}`}
                   className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-900 rounded-lg hover:bg-yellow-600"
                 >
                   Read More
@@ -103,7 +105,7 @@ const ServiceDetails = () => {
     <>
       <Navbar />
       <section className="bg-red-900 text-white p-5 md:p-16  ">
-        <div className="grid md:grid-cols gap-2 lg:px-36">
+        <div className="grid md:grid-cols  gap-2 lg:px-36">
           {/* Text Content */}
           <div className="flex flex-col justify-center space-y-4 max-w-xl">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -209,7 +211,7 @@ const ServiceDetails = () => {
               </div>
 
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
+                {/* <div className="flex items-center space-x-3">
                   <FaPhoneAlt className="text-green-600 text-3xl" />
                   <div>
                     <h3 className="text-xl font-semibold text-gray-700">
@@ -222,7 +224,7 @@ const ServiceDetails = () => {
                       +254 703082000
                     </a>
                   </div>
-                </div>
+                </div> */}
 
                 <div>
                   <h3 className="text-xl font-semibold text-gray-700">
@@ -261,7 +263,7 @@ const ServiceDetails = () => {
         </div>
 
         {/* Contact Card */}
-        <div className="lg:w-[300px] w-full bg-red-100 h-min rounded-xl p-6 shadow-md text-sm text-gray-800">
+        <div className="lg:w-[300px] w-full bg-red-50 h-min rounded-xl p-6 shadow-md text-sm text-gray-800">
           <h3 className="font-semibold mb-4 text-xl">
             Have Additional Questions?
           </h3>
@@ -288,11 +290,11 @@ const ServiceDetails = () => {
           </div>
         </div>
       </div>
-      <section className="bg-green-50 py-12 px-6">
+      <section className="bg-red-50 py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-8">
             <div>
-              <h2 className="text-4xl font-bold text-green-900">
+              <h2 className="text-4xl font-bold text-red-900">
                 Other Services
               </h2>
             </div>
@@ -302,23 +304,23 @@ const ServiceDetails = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {clinicalServices.map((service, index) => (
+            {clinicalServices.slice(0, 2).map((service, index) => (
+              // {clinicalServices.slice(0, VisibleServices).map((item) => (
               <div key={index} className="bg-white rounded-xl shadow p-4">
-                <img
-                  src={service.image.src}
-                  alt={service.image.alt}
-                  className="rounded-lg mb-4 h-64 w-full object-cover"
-                />
-                <h3 className="text-2xl font-semibold text-gray-700">
-                  {service.name}
-                </h3>
-                <p className="text-gray-700 mt-2">{service.description}</p>
-                <a
-                  href="#"
-                  className="inline-block mt-4 text-gray-700 font-medium hover:underline"
-                >
-                  Learn More →
-                </a>
+                <Link to={`/service-detail/${service.id}`}>
+                  <img
+                    src={service.image.src}
+                    alt={service.image.alt}
+                    className="rounded-lg mb-4 h-64 w-full object-cover"
+                  />
+                  <h3 className="text-2xl font-semibold text-gray-700">
+                    {service.name}
+                  </h3>
+                  <p className="text-gray-700 mt-2">{service.description}</p>
+                  <span className="inline-block mt-4 text-gray-700 font-medium cursor-pointer hover:underline">
+                    Learn More →
+                  </span>
+                </Link>
               </div>
             ))}
           </div>

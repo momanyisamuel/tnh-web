@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <div className="bg-gray-100 rounded-lg p-10 w-full max-w-4xl shadow-md mt-8">
+    <div className="bg-gray-100 rounded-lg mx-auto p-10 w-full max-w-4xl shadow-md mt-8">
       <h2 className="text-center text-2xl font-semibold mb-2">
         Feel free to contact us.
       </h2>

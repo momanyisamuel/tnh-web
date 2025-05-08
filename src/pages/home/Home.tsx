@@ -9,7 +9,7 @@ import Features from "./features";
 import InsuranceSlider from "./InsuranceSlider";
 import ServicesSection from "./ServicesSection";
 import Metrics from "./Metrics";
-import TestimonialCarousel from "@/components/TestimonialCouresel";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 type HomeProps = object;
 
