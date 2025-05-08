@@ -46,186 +46,300 @@
     }
   },
   {
-    "name": "Warwick Centre Outpatient Clinic",
-    "id": "galleria-opc",
-    "description": " The Nairobi Hospital Outpatient Clinic at Galleria Mall is part of the renowned Nairobi Hospital's network of healthcare facilities, offering high-quality medical services in a more accessible and convenient location for residents and visitors of the area. The outpatient clinic at Galleria is designed to provide a wide range of healthcare services for those who don’t require hospitalization but need medical consultations, diagnostics, and follow-up care. Galleria Mall clinic opens daily from 7am-7pm. With fully operational dispensing pharmacies, laboratory, X-ray, CT Scan and ultrasound.",
-    "contact": "+254 712 345678",
-    "email": "gallerianursing@nbihosp.org",
-    "location": "Lang'ata Road, Nairobi",
+    "name": "Rosslyn Outpatient Clinic",
+    "id": "rosslyn-opc",
+    "description": "The Nairobi Hospital Outpatient Clinic at Rosslyn offers comprehensive outpatient medical services with a focus on convenience, accessibility, and excellence in care. Located in the Rosslyn area, the clinic provides a wide range of general and specialized healthcare services, supported by on-site diagnostics, pharmacy, and radiology facilities. The clinic operates daily from 7am to 7pm, catering to both walk-ins and booked appointments.",
+    "contact": "+254 712 987654",
+    "email": "rosslynnursing@nbihosp.org",
+    "location": "Rosslyn, Nairobi",
     "accordionItems": {
       "item-1": {
-        "title": "DENTAL SERVICES",
-        "Subject": "Monday, Wednesday, Friday: 8am-4pm Alternate Tuesday, Thursday and Saturday: 8am-4pm (on booking)"
+        "title": "GENERAL CONSULTATIONS",
+        "Subject": "Daily: 7:00am - 7:00pm"
       },
       "item-2": {
-        "title": "EAR NOSE & THROAT CLINIC",
-        "Subject": "Thursdays: 3:00pm - 4:00pm"
+        "title": "ACCIDENT AND EMERGENCY CONSULTATIONS",
+        "Subject": "Daily: 7:00am - 7:00pm"
       },
       "item-3": {
-        "title": "ANTENATAL CLINIC, POSTNATAL & B GYNAECOLOGY CLINIC",
-        "Subject": "Tuesdays, Wednesdays & Thursday: 9:00am -1:00pm"
+        "title": "WELLNESS/EXECUTIVE CLINIC",
+        "Subject": "Monday - Sunday: On Booking"
       },
       "item-4": {
-        "title": "PHYSIOTHERAPY",
-        "Subject": "Monday to Friday: 7:00am - 6:00pm & Saturday: 8:00am - 1:00pm"
+        "title": "WELL BABY CLINIC (BABY FRIENDLY/KEPI VACCINATIONS)",
+        "Subject": "Daily: 7:00am - 4:00pm"
       },
       "item-5": {
-        "title": "SURGICAL OUTPATIENT CLINIC (SOPC)",
-        "Subject": "Wednesdays 2.00pm-4.00pm"
+        "title": "TRAVEL VACCINES & CERTIFICATION",
+        "Subject": "Daily: 7:00am - 7:00pm"
       },
       "item-6": {
-        "title": "WELL BABY CLINIC",
-        "Subject": "Daily: 8:00am - 3:00pm"
+        "title": "LABORATORY SERVICES",
+        "Subject": "Daily: 7:00am - 7:00pm"
       },
       "item-7": {
-        "title": "NUTRITION CLINIC",
-        "Subject": "Mondays 8.00am-4.00pm"
+        "title": "PHARMACY SERVICES",
+        "Subject": "Daily: 7:00am - 7:00pm"
       },
       "item-8": {
-        "title": "FAMILY HEALTH CLINIC & MEDICAL CHECK-UP",
-        "Subject": "Fridays: 8:00am - 4:00pm"
+        "title": "RADIOLOGY SERVICES",
+        "Subject": "Daily: 7:00am - 7:00pm"
       },
       "item-9": {
-        "title": "PAEDITRIC CLINICS",
-        "Subject": "Mondays 8.00am-2.00pm (General paeditrics & Paediatrics infectious diseases).\nTuesdays 9:00am-2:00pm\nWednesday-Friday 10.00am to 3.00pm\nSaturdays: 11:00am - 3.00pm (General paediatrics & Paediatrics endocrinology)"
+        "title": "SURGICAL CLINIC",
+        "Subject": "Monday: 9:00am - 1:00pm"
+      },
+      "item-10": {
+        "title": "EAR NOSE THROAT (ENT) CLINIC",
+        "Subject": "Tuesday: 2:00pm - 4:00pm"
+      },
+      "item-11": {
+        "title": "ANTE & POST NATAL/GYNAE CLINIC",
+        "Subject": "Wednesday: 9:00am - 3:00pm"
+      },
+      "item-12": {
+        "title": "PAEDIATRIC CLINIC",
+        "Subject": "Wednesday: 9:00am - 3:00pm"
+      },
+      "item-13": {
+        "title": "ORTHOPAEDIC CLINIC",
+        "Subject": "Thursday: 9:00am - 3:00pm"
+      },
+      "item-14": {
+        "title": "FAMILY HEALTH CLINIC",
+        "Subject": "Friday: 9:00am - 2:00pm"
       }
     }
   },
   {
-    "name": "Rosslyn Riviera Outpatient Clinic",
-    "id": "galleria-opc",
-    "description": " The Nairobi Hospital Outpatient Clinic at Galleria Mall is part of the renowned Nairobi Hospital's network of healthcare facilities, offering high-quality medical services in a more accessible and convenient location for residents and visitors of the area. The outpatient clinic at Galleria is designed to provide a wide range of healthcare services for those who don’t require hospitalization but need medical consultations, diagnostics, and follow-up care. Galleria Mall clinic opens daily from 7am-7pm. With fully operational dispensing pharmacies, laboratory, X-ray, CT Scan and ultrasound.",
-    "contact": "+254 712 345678",
-    "email": "gallerianursing@nbihosp.org",
-    "location": "Lang'ata Road, Nairobi",
+    "name": "Warwick Outpatient Clinic",
+    "id": "warwick-opc",
+    "description": "The Nairobi Hospital Outpatient Clinic at Warwick delivers quality healthcare services in a convenient setting, providing general medical care, diagnostics, and a wide range of specialty clinics. Open daily from 7am to 7pm, Warwick Clinic is equipped with full diagnostic support and pharmacy services, offering both walk-in consultations and scheduled appointments.",
+    "contact": "+254 712 112233",
+    "email": "warwicknursing@nbihosp.org",
+    "location": "Warwick Centre, Nairobi",
     "accordionItems": {
       "item-1": {
-        "title": "DENTAL SERVICES",
-        "Subject": "Monday, Wednesday, Friday: 8am-4pm Alternate Tuesday, Thursday and Saturday: 8am-4pm (on booking)"
+        "title": "GENERAL CONSULTATIONS",
+        "Subject": "Daily: 7:00am - 7:00pm"
       },
       "item-2": {
-        "title": "EAR NOSE & THROAT CLINIC",
-        "Subject": "Thursdays: 3:00pm - 4:00pm"
+        "title": "ACCIDENT AND EMERGENCY CONSULTATIONS",
+        "Subject": "Daily: 7:00am - 7:00pm"
       },
       "item-3": {
-        "title": "ANTENATAL CLINIC, POSTNATAL & B GYNAECOLOGY CLINIC",
-        "Subject": "Tuesdays, Wednesdays & Thursday: 9:00am -1:00pm"
+        "title": "WELLNESS/EXECUTIVE CLINIC",
+        "Subject": "Monday - Sunday: On Booking"
       },
       "item-4": {
-        "title": "PHYSIOTHERAPY",
-        "Subject": "Monday to Friday: 7:00am - 6:00pm & Saturday: 8:00am - 1:00pm"
+        "title": "WELL BABY CLINIC (BABY FRIENDLY/KEPI VACCINATIONS)",
+        "Subject": "Daily: 7:00am - 4:00pm"
       },
       "item-5": {
-        "title": "SURGICAL OUTPATIENT CLINIC (SOPC)",
-        "Subject": "Wednesdays 2.00pm-4.00pm"
+        "title": "TRAVEL VACCINES & CERTIFICATION",
+        "Subject": "Daily: 7:00am - 7:00pm"
       },
       "item-6": {
-        "title": "WELL BABY CLINIC",
-        "Subject": "Daily: 8:00am - 3:00pm"
+        "title": "LABORATORY SERVICES",
+        "Subject": "Daily: 7:00am - 7:00pm"
       },
       "item-7": {
-        "title": "NUTRITION CLINIC",
-        "Subject": "Mondays 8.00am-4.00pm"
+        "title": "PHARMACY SERVICES",
+        "Subject": "Daily: 7:00am - 7:00pm"
       },
       "item-8": {
-        "title": "FAMILY HEALTH CLINIC & MEDICAL CHECK-UP",
-        "Subject": "Fridays: 8:00am - 4:00pm"
+        "title": "RADIOLOGY SERVICES",
+        "Subject": "Daily: 7:00am - 7:00pm"
       },
       "item-9": {
-        "title": "PAEDITRIC CLINICS",
-        "Subject": "Mondays 8.00am-2.00pm (General paeditrics & Paediatrics infectious diseases).\nTuesdays 9:00am-2:00pm\nWednesday-Friday 10.00am to 3.00pm\nSaturdays: 11:00am - 3.00pm (General paediatrics & Paediatrics endocrinology)"
+        "title": "SURGICAL CLINIC",
+        "Subject": "Monday: 9:00am - 1:00pm"
+      },
+      "item-10": {
+        "title": "EAR NOSE THROAT (ENT) CLINIC",
+        "Subject": "Tuesday: 2:00pm - 4:00pm"
+      },
+      "item-11": {
+        "title": "ANTE & POST NATAL/GYNAE CLINIC",
+        "Subject": "Wednesday: 9:00am - 3:00pm"
+      },
+      "item-12": {
+        "title": "PAEDIATRIC CLINIC",
+        "Subject": "Wednesday: 9:00am - 3:00pm"
+      },
+      "item-13": {
+        "title": "ORTHOPAEDIC CLINIC",
+        "Subject": "Thursday: 9:00am - 3:00pm"
+      },
+      "item-14": {
+        "title": "FAMILY HEALTH CLINIC",
+        "Subject": "Friday: 9:00am - 2:00pm"
       }
     }
   },
   {
-    "name": "Kaimbu Outpatient Clinic",
-    "id": "galleria-opc",
-    "description": " The Nairobi Hospital Outpatient Clinic at Galleria Mall is part of the renowned Nairobi Hospital's network of healthcare facilities, offering high-quality medical services in a more accessible and convenient location for residents and visitors of the area. The outpatient clinic at Galleria is designed to provide a wide range of healthcare services for those who don’t require hospitalization but need medical consultations, diagnostics, and follow-up care. Galleria Mall clinic opens daily from 7am-7pm. With fully operational dispensing pharmacies, laboratory, X-ray, CT Scan and ultrasound.",
-    "contact": "+254 712 345678",
-    "email": "gallerianursing@nbihosp.org",
-    "location": "Lang'ata Road, Nairobi",
+    "name": "Capital Centre Outpatient Clinic",
+    "id": "capital-opc",
+    "description": "The Nairobi Hospital Outpatient Clinic at Capital Centre provides convenient access to specialized and general outpatient medical care. With a variety of clinics available throughout the week, the facility ensures high-quality healthcare tailored to meet patients’ needs in a central location. The clinic supports both walk-in and scheduled visits with diagnostic and vaccination services available on-site.",
+    "contact": "+254 712 556677",
+    "email": "capitalnursing@nbihosp.org",
+    "location": "Capital Centre, Mombasa Road, Nairobi",
     "accordionItems": {
       "item-1": {
-        "title": "DENTAL SERVICES",
-        "Subject": "Monday, Wednesday, Friday: 8am-4pm Alternate Tuesday, Thursday and Saturday: 8am-4pm (on booking)"
+        "title": "PAEDIATRIC CLINIC",
+        "Subject": "Wednesday: 11:00am - 4:00pm<br>Saturday: 11:00am - 4:00pm"
       },
       "item-2": {
-        "title": "EAR NOSE & THROAT CLINIC",
-        "Subject": "Thursdays: 3:00pm - 4:00pm"
+        "title": "SURGICAL CLINIC",
+        "Subject": "Tuesday: 2:00pm - 4:00pm"
       },
       "item-3": {
-        "title": "ANTENATAL CLINIC, POSTNATAL & B GYNAECOLOGY CLINIC",
-        "Subject": "Tuesdays, Wednesdays & Thursday: 9:00am -1:00pm"
+        "title": "TRAVEL VACCINE CLINIC",
+        "Subject": "Daily: 7:00am - 4:00pm"
       },
       "item-4": {
-        "title": "PHYSIOTHERAPY",
-        "Subject": "Monday to Friday: 7:00am - 6:00pm & Saturday: 8:00am - 1:00pm"
+        "title": "ENT CLINIC",
+        "Subject": "Monday: 3:00pm - 5:00pm"
       },
       "item-5": {
-        "title": "SURGICAL OUTPATIENT CLINIC (SOPC)",
-        "Subject": "Wednesdays 2.00pm-4.00pm"
+        "title": "ANTENATAL/GYNAECOLOGY CLINIC",
+        "Subject": "Monday: 9:00am - 2:00pm"
       },
       "item-6": {
-        "title": "WELL BABY CLINIC",
-        "Subject": "Daily: 8:00am - 3:00pm"
+        "title": "ORTHOPAEDIC/SPORTS MEDICINE CLINIC",
+        "Subject": "Friday: 10:00am - 1:00pm"
       },
       "item-7": {
-        "title": "NUTRITION CLINIC",
-        "Subject": "Mondays 8.00am-4.00pm"
+        "title": "FAMILY HEALTH CLINIC",
+        "Subject": "Thursday: 9:00am - 1:00pm"
       },
       "item-8": {
-        "title": "FAMILY HEALTH CLINIC & MEDICAL CHECK-UP",
-        "Subject": "Fridays: 8:00am - 4:00pm"
+        "title": "WELL BABY/VACCINATION CLINIC",
+        "Subject": "Tuesday: 8:00am - 4:00pm"
       },
       "item-9": {
-        "title": "PAEDITRIC CLINICS",
-        "Subject": "Mondays 8.00am-2.00pm (General paeditrics & Paediatrics infectious diseases).\nTuesdays 9:00am-2:00pm\nWednesday-Friday 10.00am to 3.00pm\nSaturdays: 11:00am - 3.00pm (General paediatrics & Paediatrics endocrinology)"
+        "title": "NUTRITION CLINIC",
+        "Subject": "Daily: 8:00am - 4:00pm"
+      },
+      "item-10": {
+        "title": "GENERAL CONSULTATIONS",
+        "Subject": "Tuesday: 9:00am - 4:00pm"
       }
     }
   },
   {
-    "name": "Southfield Mall Outpatient Clinic",
-    "id": "galleria-opc",
-    "description": " The Nairobi Hospital Outpatient Clinic at Galleria Mall is part of the renowned Nairobi Hospital's network of healthcare facilities, offering high-quality medical services in a more accessible and convenient location for residents and visitors of the area. The outpatient clinic at Galleria is designed to provide a wide range of healthcare services for those who don’t require hospitalization but need medical consultations, diagnostics, and follow-up care. Galleria Mall clinic opens daily from 7am-7pm. With fully operational dispensing pharmacies, laboratory, X-ray, CT Scan and ultrasound.",
-    "contact": "+254 712 345678",
-    "email": "gallerianursing@nbihosp.org",
-    "location": "Lang'ata Road, Nairobi",
+    "name": "Southfield Outpatient Clinic",
+    "id": "southfield-opc",
+    "description": "The Nairobi Hospital Southfield Outpatient Clinic offers a wide array of specialized and general outpatient services in a convenient and accessible location. Equipped with expert healthcare professionals and modern diagnostic services, the clinic caters to both walk-in and appointment-based consultations throughout the week.",
+    "contact": "+254 700 628000 / 0702433433",
+    "email": "southfieldnursing@nbihosp.org",
+    "location": "Southfield Mall, Nairobi",
     "accordionItems": {
       "item-1": {
-        "title": "DENTAL SERVICES",
-        "Subject": "Monday, Wednesday, Friday: 8am-4pm Alternate Tuesday, Thursday and Saturday: 8am-4pm (on booking)"
+        "title": "PAEDIATRIC CLINIC",
+        "Subject": "Monday & Wednesday: 9:00am - 4:00pm<br>Friday: 9:00am - 5:00pm<br>Saturday: 8:00am - 3:00pm"
       },
       "item-2": {
-        "title": "EAR NOSE & THROAT CLINIC",
-        "Subject": "Thursdays: 3:00pm - 4:00pm"
+        "title": "ENT CLINIC",
+        "Subject": "Tuesday: 9:00am - 11:00am"
       },
       "item-3": {
-        "title": "ANTENATAL CLINIC, POSTNATAL & B GYNAECOLOGY CLINIC",
-        "Subject": "Tuesdays, Wednesdays & Thursday: 9:00am -1:00pm"
+        "title": "FAMILY HEALTH CLINIC",
+        "Subject": "Monday: 11:00am - 4:00pm<br>Wednesday: 9:00am - 1:00pm"
       },
       "item-4": {
-        "title": "PHYSIOTHERAPY",
-        "Subject": "Monday to Friday: 7:00am - 6:00pm & Saturday: 8:00am - 1:00pm"
+        "title": "ANC/GYNAECOLOGY CLINIC",
+        "Subject": "Tuesday: 9:00am - 2:00pm<br>Friday: 2:00pm - 6:00pm"
       },
       "item-5": {
-        "title": "SURGICAL OUTPATIENT CLINIC (SOPC)",
-        "Subject": "Wednesdays 2.00pm-4.00pm"
+        "title": "SURGICAL CLINIC",
+        "Subject": "Tuesday: 2:00pm - 5:00pm<br>Friday: 9:00am - 12:00pm"
       },
       "item-6": {
-        "title": "WELL BABY CLINIC",
-        "Subject": "Daily: 8:00am - 3:00pm"
+        "title": "ORTHOPAEDIC CLINIC",
+        "Subject": "Thursday: 3:00pm - 5:00pm"
       },
       "item-7": {
-        "title": "NUTRITION CLINIC",
-        "Subject": "Mondays 8.00am-4.00pm"
+        "title": "DENTAL CLINIC",
+        "Subject": "Monday to Friday: 8:00am - 4:00pm"
       },
       "item-8": {
-        "title": "FAMILY HEALTH CLINIC & MEDICAL CHECK-UP",
-        "Subject": "Fridays: 8:00am - 4:00pm"
+        "title": "PHYSIOTHERAPY CLINIC",
+        "Subject": "Tuesday & Thursday: 8:00am - 4:00pm<br>Saturday: 8:00am - 12:00pm"
       },
       "item-9": {
-        "title": "PAEDITRIC CLINICS",
-        "Subject": "Mondays 8.00am-2.00pm (General paeditrics & Paediatrics infectious diseases).\nTuesdays 9:00am-2:00pm\nWednesday-Friday 10.00am to 3.00pm\nSaturdays: 11:00am - 3.00pm (General paediatrics & Paediatrics endocrinology)"
+        "title": "NUTRITION CLINIC",
+        "Subject": "Wednesday: 8:00am - 2:00pm"
+      },
+      "item-10": {
+        "title": "WELL BABY CLINIC",
+        "Subject": "Saturday: 8:00am - 4:00pm"
+      },
+      "item-11": {
+        "title": "TRAVEL VACCINE CLINIC",
+        "Subject": "Daily: 8:00am - 4:00pm"
+      }
+    }
+  },
+  {
+    "name": "Kiambu Outpatient Clinic",
+    "id": "kiambu-opc",
+    "description": "The Nairobi Hospital Kiambu Outpatient Clinic offers quality, patient-centered care through a wide array of general and specialty services. With flexible hours and highly trained medical staff, the clinic is well-equipped to serve residents of Kiambu and surrounding areas through both scheduled and walk-in visits.",
+    "contact": "0701442277 / 0715 442277",
+    "email": "kiambunursing@nbihosp.org",
+    "location": "Kiambu, Nairobi",
+    "accordionItems": {
+      "item-1": {
+        "title": "ANTENATAL/GYNECOLOGY/POST-NATAL/FAMILY PLANNING CLINIC",
+        "Subject": "Wednesday: 2:00pm - 6:00pm<br>Friday: 9:00am - 2:00pm"
+      },
+      "item-2": {
+        "title": "SURGICAL CLINIC",
+        "Subject": "Friday: 1:00pm - 4:00pm"
+      },
+      "item-3": {
+        "title": "PAEDIATRIC CLINIC",
+        "Subject": "Monday: 11:00am - 2:00pm"
+      },
+      "item-4": {
+        "title": "FAMILY HEALTH CLINIC",
+        "Subject": "Saturday: 9:00am - 4:00pm"
+      },
+      "item-5": {
+        "title": "ORTHOPAEDIC CLINIC",
+        "Subject": "Tuesday: 2:00pm - 5:00pm"
+      },
+      "item-6": {
+        "title": "ENDOCRINOLOGY CLINIC",
+        "Subject": "Wednesday: 1:30pm - 4:00pm"
+      },
+      "item-7": {
+        "title": "ENT CLINIC",
+        "Subject": "Wednesday: 11:00am - 2:00pm"
+      },
+      "item-8": {
+        "title": "DENTAL CLINIC",
+        "Subject": "Monday to Wednesday & Friday: 7:00am - 4:00pm"
+      },
+      "item-9": {
+        "title": "NUTRITION CLINIC",
+        "Subject": "Friday: 9:00am - 4:00pm (On booking)"
+      },
+      "item-10": {
+        "title": "PHYSIOTHERAPY",
+        "Subject": "Monday to Friday: 8:00am - 4:00pm<br>Saturday: 8:00am - 1:00pm"
+      },
+      "item-11": {
+        "title": "WELLNESS CLINIC",
+        "Subject": "Thursday: 7:00am - 3:00pm"
+      },
+      "item-12": {
+        "title": "COUNSELLING CLINIC",
+        "Subject": "Friday: 9:00am - 4:00pm"
+      },
+      "item-13": {
+        "title": "WELL BABY CLINIC",
+        "Subject": "Daily: 8:00am - 3:00pm"
       }
     }
   }

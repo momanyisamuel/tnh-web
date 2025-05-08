@@ -37,7 +37,7 @@ const ServiceCards = () => {
   //   setVisibleServices((prev) => prev + 4);
   // };
   return (
-    <div className="flex flex-col items-center bg-gray-100 py-10 justify-center mt-8">
+    <div className="flex flex-col items-center bg-gray-200 py-10 justify-center mt-8">
       {/* <h1 className="font-bold text-4xl my-10">Clinical Services</h1> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-[5%] gap-6 justify-center">

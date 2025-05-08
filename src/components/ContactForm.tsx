@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <div className="bg-red-50 rounded-lg p-10 w-full max-w-4xl shadow-md mt-8">
+    <div className="bg-gray-100 rounded-lg p-10 w-full max-w-4xl shadow-md mt-8">
       <h2 className="text-center text-2xl font-semibold mb-2">
         Feel free to contact us.
       </h2>
@@ -28,7 +28,7 @@ const ContactForm = () => {
         />
         <button
           type="submit"
-          className="bg-red-900 text-white py-3 px-6 rounded-md hover:bg-yellow-600 hover:text- transition"
+          className="bg-red-900 text-white py-3 px-6 rounded-md cursor-pointer hover:bg-yellow-600 hover:text- transition"
         >
           Submit
         </button>
