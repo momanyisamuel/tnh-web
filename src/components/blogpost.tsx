@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router";
 
 
 
@@ -91,10 +92,13 @@ const blogpost = () => {
           </div>
           
         ))}
+
       </div>
-      <button className=" bg-red-900 flex mt-10 ml-25 text-white px-5 py-2 rounded-md hover:bg-yellow-600 md:hidden">
-          View All Posts
-        </button>
+      
+      <Link to="/bloglist" className=" bg-red-900 flex mt-10 ml-25 text-white px-5 py-2 rounded-md hover:bg-yellow-600 md:hidden">
+        View All Posts
+      </Link>
+
       </motion.div>
     </section>
   );

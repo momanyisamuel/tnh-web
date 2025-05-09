@@ -33,17 +33,16 @@ const Hero = () => {
               outpatient centres at Galleria Mall, Capital Centre, Rosslyn
               Riviera Mall, Kiambu Mall, Southfield Mall or Warwick Centre.
             </p>
-            </motion.div>
-            <div className="flex space-x-4">
-              <button className="bg-white text-black px-5 py-2 rounded-lg font-semibold">
-                <Link to="/clinics"> Clinical Services </Link>
-              </button>
-              <Link to="/about" className="flex items-center space-x-2">
-                <span>About Us</span>
-                <span className="text-xl">→</span>
-              </Link>
-            </div>
-          
+          </motion.div>{" "}
+          <div className="flex space-x-4">
+            <button className="bg-white text-black px-5 py-2 rounded-lg font-semibold">
+              <Link to="/clinics"> Clinical Services </Link>
+            </button>
+            <Link to="/about" className="flex items-center space-x-2">
+              <span>About Us</span>
+              <span className="text-xl">→</span>
+            </Link>
+          </div>
         </div>
 
         {/* Image Grid */}

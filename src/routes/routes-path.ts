@@ -1,6 +1,5 @@
 import { lazyLoad } from "@/components/layout/lazy-load";
 
-
 export type UIRoutesType = {
   name: string;
   path: string;
@@ -72,7 +71,17 @@ const UIRoutes = {
     name: "navigation.individualPage",
     path: "/member-page/:id",
     component: lazyLoad(() => import("../pages/about/MemberPage")),
-  }
+  },
+  blogList: {
+    name: "navigation.blogList",
+    path: "/bloglist",
+    component: lazyLoad(() => import("../pages/blog/BlogList")),
+  },
+  blogDetails: {
+    name: "navigation.blogDetails",
+    path: "/blog/:id",
+    component: lazyLoad(() => import("../pages/blog/BlogDetail")),
+  },
 };
 
 export const RoutesPath: Record<keyof typeof UIRoutes, UIRoutesType> = UIRoutes;
