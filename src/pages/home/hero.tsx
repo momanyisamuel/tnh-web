@@ -3,6 +3,12 @@ import care2 from "@/assets/images/image1.png";
 import care3 from "@/assets/images/image3.png";
 import care4 from "@/assets/images/image4.jpg";
 import { Link } from "react-router";
+import { motion } from "framer-motion";
+
+const slideUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const Hero = () => {
   return (
@@ -10,25 +16,34 @@ const Hero = () => {
       <div className="grid xl:grid-cols-2 gap-6">
         {/* Text Content */}
         <div className="flex flex-col justify-center space-y-4">
-          <h1 className="text-3xl md:text-6xl  font-bold leading-tight">
-            70+ Years of Healthcare with a difference.
-          </h1>
-          <p className="text-lg md:text-xl">
-            The Nairobi hospital has excelled in medical expertise, service
-            provision and has deservedly earned recognition throughout East
-            Africa and beyond. Visit our main hospital or any of our 6
-            outpatient centres at Galleria Mall, Capital Centre, Rosslyn Riviera
-            Mall, Kiambu Mall, Southfield Mall or Warwick Centre.
-          </p>
-          <div className="flex space-x-4">
-            <button className="bg-white text-black px-5 py-2 rounded-lg font-semibold">
-              <Link to="/clinics"> Clinical Services </Link>
-            </button>
-            <Link to="/about" className="flex items-center space-x-2">
-              <span>About Us</span>
-              <span className="text-xl">→</span>
-            </Link>
-          </div>
+          <motion.div
+            variants={slideUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <h1 className="text-3xl md:text-6xl  font-bold leading-tight">
+              70+ Years of Healthcare with a difference.
+            </h1>
+            <p className="text-lg md:text-xl">
+              The Nairobi hospital has excelled in medical expertise, service
+              provision and has deservedly earned recognition throughout East
+              Africa and beyond. Visit our main hospital or any of our 6
+              outpatient centres at Galleria Mall, Capital Centre, Rosslyn
+              Riviera Mall, Kiambu Mall, Southfield Mall or Warwick Centre.
+            </p>
+            </motion.div>
+            <div className="flex space-x-4">
+              <button className="bg-white text-black px-5 py-2 rounded-lg font-semibold">
+                <Link to="/clinics"> Clinical Services </Link>
+              </button>
+              <Link to="/about" className="flex items-center space-x-2">
+                <span>About Us</span>
+                <span className="text-xl">→</span>
+              </Link>
+            </div>
+          
         </div>
 
         {/* Image Grid */}

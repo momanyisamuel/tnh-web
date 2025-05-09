@@ -52,7 +52,7 @@ const InsuranceSlider = () => {
 
   return (
     <div className="flex flex-col items-center justify-center px-4 py-10 mx-5 bg-white">
-      <h2 className="text-xl sm:text-3xl font-bold text-center mb-6">
+      <h2 className="text-xl sm:text-3xl font-bold text-center text-red-900 mb-6">
         Our Insurance Partners
       </h2>
 
