@@ -1,6 +1,6 @@
 import AnimatedCounter from "@/components/Animatedcounter";
 import { motion } from "framer-motion";
-
+import westernimg from "@/assets/images/tnh-western.jpg";
 const slideUp = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0 },
@@ -17,8 +17,8 @@ const Metrics = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <img
-          src="https://www.businessdailyafrica.com/resource/image/4835778/portrait_ratio1x1/1600/1600/dc5dce77e68b7280b9179c2a564d6fb8/jw/nai-hospital.jpg"
-          alt="People in group therapy"
+          src={westernimg}
+          alt="Western Entrance Image"
           className="rounded-xl shadow-md"
         />
       </motion.div>
