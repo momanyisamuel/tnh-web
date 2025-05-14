@@ -1,35 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router";
+import { blogPosts } from "@/pages/blog/BlogList";
 
-const blogPosts = [
-  {
-    id: 1,
-    category: "Viruses",
-    title: "Covid-19",
-    description:
-      "Covering insights into understanding mental processes and practical ways to manage them.",
-    image:
-      "https://images.unsplash.com/photo-1592671977183-b306d0e37a20?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 2,
-    category: "Diet",
-    title: "Healthy Food Choices",
-    description:
-      "Exploring deeper layers of the mind and offering tools for mental and emotional growth.",
-    image:
-      "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 3,
-    category: "Therapy",
-    title: "Wellness and Therapy",
-    description:
-      "Examining relationships through therapy and offering advice on emotional connection.",
-    image:
-      "https://plus.unsplash.com/premium_photo-1664378616928-dc6842677183?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-];
+
 
 const slideUp = {
   hidden: { opacity: 0, y: 50 },
@@ -82,21 +55,16 @@ const blogpost = () => {
                   {post.title}
                 </h3>
                 <p className="text-gray-600 mt-2 text-sm">{post.description}</p>
-                <a
-                  href="#"
-                  className="inline-flex items-center text-red-900 font-medium mt-4 hover:underline"
-                >
-                  Read More <span className="ml-1">→</span>
-                </a>
+               <Link
+                    to={`/blog/${post.id}`}
+                    className="inline-flex items-center text-red-900 font-medium mt-4 hover:underline"
+                  >
+                    Read More <span className="ml-1 ">→</span>
+                  </Link>
               </div>
             </div>
           ))}
-          <Link
-            to="/bloglist"
-            className=" bg-red-900 mt-3 mx-auto  text-white px-5 py-2 rounded-md hover:bg-yellow-600 md:hidden"
-          >
-            View All Posts
-          </Link>
+         
         </div>
       </motion.div>
     </section>

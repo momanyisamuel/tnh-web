@@ -11,7 +11,7 @@ const Features = () => {
     <div className="grid gap-20  md:grid-cols-3 text-center">
       
       {/* Card 1 */}
-      <div className="flex flex-col items-center space-y-2 shadow-xl p-6 md:p-6">
+      <div className="flex flex-col items-center space-y-2 shadow-xl shadow-red-900/50 p-6 md:p-6">
         <img src={doctor} alt="Icon 1" className="h-12 w-12" />
         <h3 className="text-lg  font-semibold text-gray-800 text-red-900"> Find a Doctor</h3>
         <p  className=" mt-2">Connecting you to trusted Doctors anytime, anywhere Wheather you need a routine check-up, Specialist advice, or Urgent Care.  </p>
@@ -19,7 +19,7 @@ const Features = () => {
       </div>
 
       {/* Card 2 */}
-      <div className="flex flex-col items-center space-y-2 shadow-xl p-6">
+      <div className="flex flex-col items-center space-y-2 shadow-xl shadow-red-900/50 p-6">
           <img src= {patient} alt="Icon 2" className="h-12 w-12 " />
         <h3 className="text-lg font-semibold text-gray-800 text-red-900"> Patient Registration</h3>
         <p className="mt-2">  Registering as a patient is the first step toward accessing personalized, quality healthcare.  </p>
@@ -27,7 +27,7 @@ const Features = () => {
       </div>
 
       {/* Card 3 */}
-      <div className="flex flex-col items-center space-y-2 shadow-xl p-6">
+      <div className="flex flex-col items-center space-y-2 shadow-xl shadow-red-900/50 p-6">
         <img src={location} alt="Icon 3" className="h-12 w-12" />
         <h3 className="text-lg font-semibold text-gray-800 text-red-900"> Getting to the Hospital</h3>
         <p className="mt-2"> We want your visit to be easy.
