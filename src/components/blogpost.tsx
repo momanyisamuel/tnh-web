@@ -10,6 +10,7 @@ const slideUp = {
 };
 
 const blogpost = () => {
+   const blogsToShow = blogPosts.slice(0, 3);
   return (
     <section className="px-6 py-12 max-w-7xl mx-auto">
       <motion.div
@@ -37,7 +38,7 @@ const blogpost = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {blogPosts.map((post) => (
+          {blogsToShow.map((post) => (
             <div
               key={post.id}
               className="rounded-lg overflow-hidden shadow hover:shadow-md transition"
