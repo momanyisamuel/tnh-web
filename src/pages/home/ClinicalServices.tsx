@@ -1,12 +1,11 @@
 import { Link } from "react-router";
 import clinicalServices from "@/data/clinicalServices.json";
 
-// Cardtitles
 const Services = () => {
   const servicesToShow = clinicalServices.slice(0, 4);
   return (
     <div className="flex flex-col items-center justify-center mt-2">
-      <h1 className="font-bold text-3xl font-semibold text-red-900 mb-4 ">
+      <h1 className="font-bold text-3xl text-red-900 mb-4 ">
         Clinical Services
       </h1>
 

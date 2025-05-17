@@ -1,5 +1,6 @@
 import { lazyLoad } from "@/components/layout/lazy-load";
 
+
 export type UIRoutesType = {
   name: string;
   path: string;
@@ -19,12 +20,12 @@ const UIRoutes = {
   },
   about: {
     name: "navigation.about",
-    path: "/about",
+    path: "/about-us",
     component: lazyLoad(() => import("../pages/about/About")),
   },
-  clinics: {
-    name: "navigation.clinics",
-    path: "/clinics",
+  clinicalServices: {
+    name: "navigation.clinicalServices",
+    path: "/clinical-services",
     component: lazyLoad(() => import("../pages/clinics/Clinics")),
   },
   serviceDetails: {
@@ -32,55 +33,66 @@ const UIRoutes = {
     path: "/service-detail/:id",
     component: lazyLoad(() => import("../pages/clinics/ServiceDetails")),
   },
-  boardM: {
-    name: "navigation.boardM",
-    path: "/board-of-management",
+  boardOfManagement: {
+    name: "navigation.boardOfManagement",
+    path: "/about-us/board-of-management",
     component: lazyLoad(() => import("../pages/about/BoardOfManagement")),
   },
-  boardT: {
-    name: "navigation.boardT",
-    path: "/board-of-trustees",
+  boardOfTrustees: {
+    name: "navigation.boardOfTrustees",
+    path: "/about-us/board-of-trustees",
     component: lazyLoad(() => import("../pages/about/BoardOfTrustees")),
   },
-  boardS: {
-    name: "navigation.boardT",
-    path: "/senior-management-team",
+  seniorManagement: {
+    name: "navigation.seniorManagement",
+    path: "/about-us/senior-management",
     component: lazyLoad(() => import("../pages/about/SeniorManagement")),
   },
-  HistorY: {
-    name: "navigation.HistorY",
-    path: "/history",
+  history: {
+    name: "navigation.history",
+    path: "/about-us/history",
     component: lazyLoad(() => import("../pages/about/History")),
   },
   accreditation: {
-    name: "navigation.accrediTation",
-    path: "/accreditation-certification",
+    name: "navigation.accreditation",
+    path: "/about-us/accreditation-certification",
     component: lazyLoad(() => import("../pages/about/Accreditation")),
   },
-  opcList: {
-    name: "navigation.opcList",
-    path: "/opc-list",
-    component: lazyLoad(() => import("../pages/outpatient-centers/OpcList")),
+  outpatientCenters: {
+    name: "navigation.outpatientCenters",
+    path: "/outpatient-centers",
+    component: lazyLoad(() => import("../pages/patients-visitors/outpatient-centers/OutpatientCenters")),
   },
-  opcDetails: {
-    name: "navigation.opcDetails",
-    path: "/outpatient-center/:id",
-    component: lazyLoad(() => import("../pages/outpatient-centers/OpcDetails")),
+  outPatientCenterDetails: {
+    name: "navigation.outPatientCenterDetails",
+    path: "/outpatient-centers/:id",
+    component: lazyLoad(() => import("../pages/patients-visitors/outpatient-centers/OutpatientCenterDetails")),
   },
   IndividualPage: {
     name: "navigation.individualPage",
     path: "/member-page/:id",
     component: lazyLoad(() => import("../pages/about/MemberPage")),
   },
-  blogList: {
-    name: "navigation.blogList",
-    path: "/bloglist",
-    component: lazyLoad(() => import("../pages/blog/BlogList")),
+  careers: {
+    name: "navigation.careers",
+    path: "/careers",
+    component: lazyLoad(() => import("../pages/new-media/careers/Careers")),
   },
-  blogDetails: {
-    name: "navigation.blogDetails",
-    path: "/blog/:id",
-    component: lazyLoad(() => import("../pages/blog/BlogDetail")),
+  contact: {
+    name: "navigation.contact",
+    path: "/contact",
+    component: lazyLoad(() => import("../pages/contact/Contact")),
+  },
+  admissionCharges: {
+    name: "navigation.admissionCharges",
+    path: "/admission-charges",
+    component: lazyLoad(() => import("../pages/patients-visitors/AdmissionCharges")),
+  },
+
+  medicalTourism: {
+    name: "navigation.medicalTourism",
+    path: "/medical-tourism",
+    component: lazyLoad(() => import("../pages/clinical-services/CardiologyService")),
   },
 };
 

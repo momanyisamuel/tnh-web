@@ -1,6 +1,4 @@
-import Navbar from "@/components/Navbar";
 import { teamMembers } from "./SeniorManagement";
-import Footer from "@/components/footer";
 import { useParams } from "react-router";
 
 const MemberPage = () => {
@@ -10,7 +8,6 @@ const MemberPage = () => {
 
   return (
     <>
-      <Navbar />
       <div className="bg-white text-gray-800 font-sans p-6 max-w-5xl mx-auto">
         <div>
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
@@ -73,7 +70,6 @@ const MemberPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

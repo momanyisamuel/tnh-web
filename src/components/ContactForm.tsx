@@ -1,38 +1,82 @@
-const ContactForm = () => {
-  return (
-    <div className="bg-gray-100 rounded-lg mx-auto p-10 w-full max-w-4xl shadow-md mt-8">
-      <h2 className="text-center text-2xl font-semibold mb-2">
-        Feel free to contact us.
-      </h2>
+import { Mail, Phone } from "lucide-react";
 
-      <form className="grid grid-cols-1 gap-4">
-        <input
-          type="text"
-          placeholder="Name"
-          className="p-3 border rounded-md focus:outline-none focus:ring-2 bg-white focus:ring-[#133f3f]"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="p-3 border rounded-md focus:outline-none focus:ring-2 bg-white focus:ring-[#133f3f]"
-        />
-        <input
-          type="text"
-          placeholder="Subject"
-          className="p-3 border rounded-md focus:outline-none focus:ring-2 bg-white focus:ring-[#133f3f]"
-        />
-        <textarea
-          placeholder="Message"
-          rows={5}
-          className="p-3 border rounded-md focus:outline-none focus:ring-2 bg-white focus:ring-[#133f3f]"
-        />
-        <button
-          type="submit"
-          className="bg-red-900 text-white py-3 px-6 rounded-md cursor-pointer hover:bg-yellow-600 hover:text- transition"
-        >
-          Submit
-        </button>
-      </form>
+// Define the shape of an email entry
+interface EmailEntry {
+  type: string; // e.g., "general", "medical", "service", "clinic"
+  address: string;
+}
+
+// Define the shape of the contact information
+export interface ContactInfo {
+  phone: string;
+  emails?: EmailEntry[]; // Optional array of email entries
+}
+
+// Define the props for the component
+interface ContactFormProps {
+  contactInfo: ContactInfo;
+}
+
+const ContactForm = ({ contactInfo }: ContactFormProps) => {
+  return (
+    <div className="max-w-7xl mx-auto p-10 w-full mt-8 flex flex-col gap-4 items-start">
+      <div className="flex items-start justify-center gap-6">
+        <div className="flex flex-col gap-6 w-[50%] py-4">
+          <h2 className="text-4xl font-serif text-red-900">Book an appointment</h2>
+          <p className="text-lg font-serif">
+            Our dedicated customer support team is here to assist you every step of the way, ensuring you have the guidance and assistance you need.
+          </p>
+          <div className="flex items-center gap-2">
+            <Phone className="text-red-900" />
+            <span className="text-lg font-serif font-medium text-red-900">Call support:</span>
+            <span className="text-lg font-serif">{contactInfo.phone}</span>
+          </div>
+          {contactInfo.emails && contactInfo.emails.length > 0 ? (
+            contactInfo.emails.map((email, index) => (
+              <div key={`${email.type}-${index}`} className="flex items-center gap-2">
+                <Mail className="text-red-900" />
+                <span className="text-lg font-serif font-medium text-red-900">
+                  {email.type.charAt(0).toUpperCase() + email.type.slice(1)} enquiries:
+                </span>
+                <span className="text-lg font-serif">{email.address}</span>
+              </div>
+            ))
+          ) : (
+            <p className="text-lg font-serif text-gray-600">No email contacts available.</p>
+          )}
+        </div>
+        <div className="flex flex-col gap-4 w-[50%] p-6 bg-gray-50 rounded-lg shadow-lg">
+          <form className="grid grid-cols-1 gap-4">
+            <h2 className="text-xl font-serif text-red-900">Fill in the form below with your information and enquiry</h2>
+            <input
+              type="text"
+              placeholder="Name"
+              className="p-3 border rounded-md focus:outline-none focus:ring-2 bg-white focus:ring-[#133f3f]"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              className="p-3 border rounded-md focus:outline-none focus:ring-2 bg-white focus:ring-[#133f3f]"
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              className="p-3 border rounded-md focus:outline-none focus:ring-2 bg-white focus:ring-[#133f3f]"
+            />
+            <textarea
+              placeholder="Message"
+              rows={5}
+              className="p-3 border rounded-md focus:outline-none focus:ring-2 bg-white focus:ring-[#133f3f]"
+            />
+            <button
+              type="submit"
+              className="bg-red-900 text-white py-3 px-6 rounded-md cursor-pointer hover:bg-yellow-600 hover:text- transition"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

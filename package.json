@@ -12,13 +12,14 @@
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.4",
     "@radix-ui/react-dropdown-menu": "^2.1.6",
-    "@radix-ui/react-slot": "^1.1.2",
+    "@radix-ui/react-menubar": "^1.1.14",
+    "@radix-ui/react-navigation-menu": "^1.2.12",
+    "@radix-ui/react-slot": "^1.2.2",
     "@tailwindcss/vite": "^4.0.15",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.9.4",
     "lightningcss": "^1.29.3",
-    "lightningcss-win32-x64-msvc": "^1.29.3",
     "lucide-react": "^0.483.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -41,5 +42,6 @@
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

@@ -1,5 +1,4 @@
-import Footer from "@/components/footer";
-import Navbar from "@/components/Navbar";
+
 import { FC } from "react";
 import TeamPage from "./TeamPage";
 
@@ -106,14 +105,12 @@ export const teamMembers: TeamMember[] = [
 const BoardOfTrustees: FC<TeamPageProps> = () => {
   return (
     <>
-      <Navbar />
       {/* <NavigationTabs /> */}
       <TeamPage
         title="Board of Trustees"
         description=""
         members={teamMembers}
       />
-      <Footer />
     </>
   );
 };

@@ -1,16 +1,13 @@
-import Footer from "@/components/footer";
-import Navbar from "@/components/Navbar";
 import { Hospital } from "lucide-react";
 import { Link } from "react-router";
 import opcData from "@/data/opcData.json";
 
-const OpcList: React.FC = () => {
+const OutpatientCenterList: React.FC = () => {
   return (
     <>
-      <Navbar />
       <div className="max-w-7xl mx-10 lg:mx-auto my-20 ">
-        <h2 className="text-3xl md:text-4xl text-center  font-bold mb-6 text-gray-800">
-          Outpatient Clinics
+        <h2 className="text-3xl md:text-4xl text-center  font-bold mb-6 text-red-900">
+          Our Outpatient Clinics
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 ">
           {opcData.map((opc, index) => (
@@ -36,9 +33,8 @@ const OpcList: React.FC = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 };
 
-export default OpcList;
+export default OutpatientCenterList;

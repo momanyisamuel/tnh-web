@@ -1,29 +1,22 @@
 import { Link } from "react-router";
 import opcData from "@/data/opcData.json";
-import { motion } from "framer-motion";
-
-const slideUp = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
-};
+import HeaderText from "@/components/HeaderText";
 
 const Opc = () => {
   return (
-    <motion.div
-    variants={slideUp}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.3 }}
-    transition={{ duration: 0.6, ease: "easeOut" }}
-    >
-      <div
-        className="rounded-lg p-6 md:p-10 text-center bg-grey-50 dark:border-gray-700 bg-white shadow-lg shadow-red-900/50
- mx-[16%] my-10 mt-20"
-      >
+    <div>
+      <div className="flex flex-col items-center justify-center mx-[8%] my-10">
+        <HeaderText
+          title="Outpatient Clinics"
+          description="The Nairobi Hospital’s outpatient centres deliver accessible, high-quality healthcare, offering consultations, diagnostics, pharmacy, and specialized services with expert, compassionate care."
+        />
+      </div>
+
+      <div className="rounded-lg p-6 md:p-10 text-center bg-grey-50 dark:border-gray-700 shadow-xl backdrop-blur-md mx-[8%] my-10 border-2 border-gray-50">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-red-900">
-          Outpatient Clinics
+          Our Outpatient Clinics
         </h2>
-        <div className="flex flex-col md:grid-cols-2 lg:flex-row lg:flex-wrap justify-center gap-4 text-black text-lg">
+        <div className="flex flex-col md:grid-cols-2 lg:flex-row lg:flex-wrap justify-center gap-4 text-black ">
           {opcData.map((opc) => (
             <Link
               key={opc.id}
@@ -35,7 +28,7 @@ const Opc = () => {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

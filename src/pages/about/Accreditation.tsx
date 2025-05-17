@@ -1,15 +1,19 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/footer";
+import Heading from "@/components/Heading";
 
 const Accreditation = () => {
   return (
     <>
-      <Navbar />
-
+      <Heading
+        image_url="https://cms.thenairobihosp.org/uploads/Accreditation_8fbeb1073c.jpg"
+        style="image"
+        title="Accreditation"
+        description="The Nairobi Hospital is a non-profit organization that is leading in medical expertise and service provision, with deservedly earned recognition throughout East Africa and beyond as an advanced diagnostic, treatment and referral centre."
+      />
       <div className="grid md:grid-cols-2 gap-6 mb-27 mt-17 max-w-7xl mx-10 lg:mx-auto ">
         <div className="p-6 border rounded-xl text-center bg-red-50  dark:border-gray-700 shadow-2xl                                                                                                        ">
           <div className="flex items-center justify-center">
-            <img className="max-h-24 rounded-2xl"
+            <img
+              className="max-h-24 rounded-2xl"
               src="https://media.licdn.com/dms/image/v2/D4D0BAQEo-bns7AD0OA/company-logo_200_200/company-logo_200_200/0/1704787530822/kenas__kenya_accreditation_service_logo?e=2147483647&v=beta&t=0sQFULHDxrKJDxdOUgezSfipBn6En3gjqTJZTqvt0j4"
               alt=""
             />
@@ -29,7 +33,8 @@ const Accreditation = () => {
         </div>
         <div className="p-6 border rounded-xl text-center bg-red-50  dark:border-gray-700 shadow-2xl">
           <div className="flex items-center justify-center">
-            <img className="max-h-24 rounded-2xl"
+            <img
+              className="max-h-24 rounded-2xl"
               src="https://seeklogo.com/images/K/kebs-logo-1223512494-seeklogo.com.png"
               alt=""
             />
@@ -52,8 +57,6 @@ const Accreditation = () => {
           </p>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };
