@@ -1,6 +1,5 @@
 import { lazyLoad } from "@/components/layout/lazy-load";
 
-
 export type UIRoutesType = {
   name: string;
   path: string;
@@ -61,12 +60,22 @@ const UIRoutes = {
   outpatientCenters: {
     name: "navigation.outpatientCenters",
     path: "/outpatient-centers",
-    component: lazyLoad(() => import("../pages/patients-visitors/outpatient-centers/OutpatientCenters")),
+    component: lazyLoad(
+      () =>
+        import(
+          "../pages/patients-visitors/outpatient-centers/OutpatientCenters"
+        )
+    ),
   },
   outPatientCenterDetails: {
     name: "navigation.outPatientCenterDetails",
     path: "/outpatient-centers/:id",
-    component: lazyLoad(() => import("../pages/patients-visitors/outpatient-centers/OutpatientCenterDetails")),
+    component: lazyLoad(
+      () =>
+        import(
+          "../pages/patients-visitors/outpatient-centers/OutpatientCenterDetails"
+        )
+    ),
   },
   IndividualPage: {
     name: "navigation.individualPage",
@@ -86,13 +95,27 @@ const UIRoutes = {
   admissionCharges: {
     name: "navigation.admissionCharges",
     path: "/admission-charges",
-    component: lazyLoad(() => import("../pages/patients-visitors/AdmissionCharges")),
+    component: lazyLoad(
+      () => import("../pages/patients-visitors/AdmissionCharges")
+    ),
   },
 
   medicalTourism: {
     name: "navigation.medicalTourism",
     path: "/medical-tourism",
-    component: lazyLoad(() => import("../pages/clinical-services/CardiologyService")),
+    component: lazyLoad(
+      () => import("../pages/clinical-services/CardiologyService")
+    ),
+  },
+  blogList: {
+    name: "navigation.blogList",
+    path: "/bloglist",
+    component: lazyLoad(() => import("../pages/blog/BlogList")),
+  },
+  blogDetails: {
+    name: "navigation.blogDetails",
+    path: "/blog/:id",
+    component: lazyLoad(() => import("../pages/blog/BlogDetail")),
   },
 };
 

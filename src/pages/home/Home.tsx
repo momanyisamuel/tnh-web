@@ -6,6 +6,7 @@ import InsuranceSlider from "./InsuranceSlider";
 import ServicesSection from "./ServicesSection";
 import Metrics from "./Metrics";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
+import Blogpost from "@/components/blogpost";
 
 type HomeProps = object;
 
@@ -35,6 +36,7 @@ const Home: FC<HomeProps> = () => {
           },
         ]}
       />
+      <Blogpost />
       <InsuranceSlider />
     </>
   );

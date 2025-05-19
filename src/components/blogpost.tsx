@@ -2,15 +2,13 @@ import { motion } from "framer-motion";
 import { Link } from "react-router";
 import { blogPosts } from "@/pages/blog/BlogList";
 
-
-
 const slideUp = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0 },
 };
 
-const blogpost = () => {
-   const blogsToShow = blogPosts.slice(0, 3);
+const Blogpost = () => {
+  const blogsToShow = blogPosts.slice(0, 3);
   return (
     <section className="px-6 py-12 max-w-7xl mx-auto">
       <motion.div
@@ -56,20 +54,19 @@ const blogpost = () => {
                   {post.title}
                 </h3>
                 <p className="text-gray-600 mt-2 text-sm">{post.description}</p>
-               <Link
-                    to={`/blog/${post.id}`}
-                    className="inline-flex items-center text-red-900 font-medium mt-4 hover:underline"
-                  >
-                    Read More <span className="ml-1 ">→</span>
-                  </Link>
+                <Link
+                  to={`/blog/${post.id}`}
+                  className="inline-flex items-center text-red-900 font-medium mt-4 hover:underline"
+                >
+                  Read More <span className="ml-1 ">→</span>
+                </Link>
               </div>
             </div>
           ))}
-         
         </div>
       </motion.div>
     </section>
   );
 };
 
-export default blogpost;
+export default Blogpost;
