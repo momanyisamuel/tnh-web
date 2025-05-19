@@ -21,18 +21,19 @@ const Home: FC<HomeProps> = () => {
       <TestimonialCarousel
         testimonials={[
           {
-            name: "Sarah Johnson",
+            name: "Cate Nyambura",
             title: "Patient",
-            image: "/assets/testimonials/sarah-johnson.jpg",
+            image: "https://lh3.googleusercontent.com/a-/ALV-UjUOuxfWm6fzqbcmzhp-1rAs8wv4NgfJ9ixm-gRj-wXmHkqFPz-EMg=w72-h72-p-rp-mo-ba8-br100",
             quote:
-              "The cardiology team at The Nairobi Hospital saved my life. Their care and expertise are unmatched.",
+             `Great and excellent service. Took less than an hour to get admitted along with the mandatory COVID test. I was admitted in the Presidential St. Michael Suite and the nurses were attentive, supportive with the best service. Discharge was seamless and everything was sorted easily and the wait staff was very prompt.`,
           },
           {
-            name: "John Smith",
+            name: "Jimmy Wanyangu",
             title: "Patient",
-            image: "/assets/testimonials/john-smith.jpg",
-            quote:
-              "I am grateful for the exceptional care I received from the cardiology team.",
+            image:
+              "https://lh3.googleusercontent.com/a-/ALV-UjW3GTYCl5luQDf88tAC-0e8kklmblsInt5VAmbW7JWEfXQoLNs=w72-h72-p-rp-mo-ba3-br100",
+            quote: `Good customer service,location is perfect within the Hospital's vicinity. Interior decor is superb especially the concrete planters on each table.
+Most institutions have workers who do not understand courtesy but Nairobi hospital understands importance of courtesy right from the gate I am really impressed !`,
           },
         ]}
       />

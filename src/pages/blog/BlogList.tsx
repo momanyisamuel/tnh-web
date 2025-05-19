@@ -122,7 +122,6 @@ export const blogPosts = [
 const bloglist = () => {
   return (
     <>
-      <Navbar />
       <section className="px-6 py-12 max-w-7xl mx-auto">
         <motion.div
           variants={slideUp}
@@ -177,7 +176,6 @@ const bloglist = () => {
           </div>
         </motion.div>
       </section>
-      <Footer />
     </>
   );
 };

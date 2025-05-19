@@ -17,8 +17,8 @@ const Metrics = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <img
-          src="https://www.businessdailyafrica.com/resource/image/4835778/portrait_ratio1x1/1600/1600/dc5dce77e68b7280b9179c2a564d6fb8/jw/nai-hospital.jpg"
-          alt="People in group therapy"
+          src="https://cms.thenairobihosp.org/uploads/nai_hospital_1ce6949b74.jpg"
+          alt="Photo of western entrance"
           className="rounded-xl shadow-md"
         />
       </motion.div>

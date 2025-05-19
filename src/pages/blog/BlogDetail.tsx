@@ -10,7 +10,6 @@ const BlogDetail = () => {
   const heroItem = blogPosts.find((blog) => blog.id === Number(id))!;
   return (
     <div>
-      <Navbar />
       <div
         className="relative h-[40vh] bg-cover bg-center flex items-center justify-center text-white"
         style={{
@@ -89,7 +88,7 @@ const BlogDetail = () => {
         </div>
       </div>
 
-      <Footer />
+    
     </div>
   );
 };
