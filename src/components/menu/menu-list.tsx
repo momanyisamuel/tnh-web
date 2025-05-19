@@ -21,11 +21,11 @@ const MenuList = ({ items }: MenuListProps) => {
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   return (
     <div>
-      <ul className="flex flex-col lg:flex-row lg:gap-8 p-6 lg:p-0">
+      <ul className="flex flex-col lg:flex-row lg:gap-8 p-6 lg:p-0 text-sm border border-blue-200 bg-white rounded-lg shadow-md">
         {items?.map((item: MenuListType) => (
           <li
             key={new Date().getTime()}
-            className="relative py-2.5 font-semibold text-black"
+            className="relative py-2.5 font-semibold text-black w-full border"
           >
             {item.dropdown ? (
               <>

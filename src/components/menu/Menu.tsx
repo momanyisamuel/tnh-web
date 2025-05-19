@@ -11,7 +11,7 @@ interface MenuProps {
 
 const MenuComponent: React.FC<MenuProps> = ({ menuItems }) => {
   return (
-    <ul className="flex flex-col lg:flex-row lg:gap-3 p-6 lg:p-0">
+    <ul className="flex flex-col lg:flex-row lg:gap-3 p-6 lg:p-0 w-full border">
       {menuItems.map((item, index) => (
         <MenuItem
           key={index}

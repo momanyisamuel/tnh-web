@@ -24,7 +24,7 @@ type Opc = {
   accordionItems?: Record<string, AccordionItem>;
 };
 
-const ServiceDetails = () => {
+const OutpatientCenterDetails = () => {
   const { id } = useParams();
   const details = opcData.find((item) => item.id === String(id)) as Opc;
 
@@ -59,12 +59,6 @@ const ServiceDetails = () => {
           <h2 className="text-2xl text-red-900 font-bold underline">
             CLINICAL SERVICES OFFERED
           </h2>
-
-          {/* <img
-            src={service.image.src}
-            alt={service.image.alt}
-            className="w-full rounded-xl shadow-md object-cover max-h-[300px]"
-          /> */}
 
           {/* Accordion */}
           <div className="">
@@ -101,4 +95,4 @@ const ServiceDetails = () => {
   );
 };
 
-export default ServiceDetails;
+export default OutpatientCenterDetails;

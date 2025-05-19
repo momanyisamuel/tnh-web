@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router";
+import { cn } from "@/lib/utils";
 
 interface MenuItemProps {
   name: string;
@@ -35,17 +36,22 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, link, dropdown }) => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
+  const minWidthClass = name.length > 7 ? "min-w-[200px]" : "min-w-[80px]";
 
   return (
-    <li ref={menuItemRef} className="relative py-2.5 font-semibold text-black">
+    <li ref={menuItemRef} className="relative font-semibold text-black border w-full text-xs">
       {dropdown ? (
         <>
-          <button
+          <div
             onClick={handleDropdownToggle}
-            className="flex items-center px-4 py-2 hover:bg-red-900 hover:rounded-xl hover:text-white w-full"
+            className={cn(
+              "flex items-center hover:bg-red-900 hover:rounded-xl hover:text-white w-full p-2",
+              minWidthClass // Apply conditional min-width
+            )}
           >
-            {name} <ChevronDown className="w-4 h-4 ml-2" />
-          </button>
+            <span>{name} </span>
+            <span><ChevronDown className="w-4 h-4 ml-2" /></span>
+          </div>
           {openDropdown && (
             <div
               ref={dropdownRef}
@@ -65,7 +71,10 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, link, dropdown }) => {
       ) : (
         <Link
           to={link || "#"}
-          className="block px-4 py-2 hover:bg-red-900 hover:rounded-xl hover:text-white"
+          className={cn(
+            "flex items-center hover:bg-red-900 hover:rounded-xl hover:text-white w-full p-2",
+            minWidthClass // Apply conditional min-width
+          )}
         >
           {name}
         </Link>

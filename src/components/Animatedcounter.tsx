@@ -31,7 +31,7 @@ const AnimatedCounter = ({
   }, [targetNumber, duration]);
 
   return (
-    <span className="text-3xl font-bold text-red-900">
+    <span className="text-[46px] font-bold text-red-900 font-serif">
       {count.toLocaleString()}
       {suffix}
     </span>

@@ -1,32 +1,79 @@
-import Footer from "@/components/footer";
-import Navbar from "@/components/Navbar";
+import Heading from "@/components/Heading";
 import { FC } from "react";
+import Opc from "../home/opc";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
+import InsuranceSlider from "../home/InsuranceSlider";
+import ContactForm from "@/components/ContactForm";
 
 type AboutProps = object;
 
 const About: FC<AboutProps> = () => {
   return (
     <>
-      <Navbar />
-      <div className="px-4 py-8 max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-6 items-center mb-12 ">
-          <img
-            src="https://cms.thenairobihosp.org/uploads/who_we_are_8fbeb1073c.jpg"
-            alt="Auditorium"
-            className="rounded-xl w-full h-auto object-cover"
-          />
-          <div className="bg-red-50 p-6 rounded-xl  dark:border-gray-700 shadow-2xl">
-            <h2 className="text-xl font-semibold text-red-800 mb-4">
-              Who We Are
-            </h2>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              The Nairobi Hospital is a non-profit organization that is leading
-              in medical expertise and service provision, with deservedly earned
-              recognition throughout East Africa and beyond as an advanced
-              diagnostic, treatment and referral centre. Investment in the
-              latest technology and medical equipment has seen us establish
-              leadership in medical procedures both in Kenya and beyond.
-            </p>
+      <Heading
+        image_url="https://cms.thenairobihosp.org/uploads/who_we_are_8fbeb1073c.jpg"
+        style="image"
+        title="Who We Are"
+        description="The Nairobi Hospital is a non-profit organization that is leading in medical expertise and service provision, with deservedly earned recognition throughout East Africa and beyond as an advanced diagnostic, treatment and referral centre."
+      />
+      <div className=" bg-orange-200">
+        <div className="mx-auto max-w-7xl px-4 py-8">
+          <div className="flex flex-col items-center justify-center mt-11">
+            <h1 className="text-5xl font-bold font-serif text-center text-red-900">
+              70+ Years of Healthcare <br /> with a difference.
+            </h1>
+          </div>
+          <div className="flex justify-center mt-11">
+            <img
+              src="https://cms.thenairobihosp.org/uploads/who_we_are_8fbeb1073c.jpg"
+              alt=""
+              className="max-h-[60vh] object-cover rounded-lg shadow-lg w-full"
+            />
+          </div>
+          <div className="flex items-center justify-center mt-11 gap-4 w-full">
+            <div className="p-6 rounded-xl text-center bg-gray-50 w-1/2 min-h-[200px]">
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cms.thenairobihosp.org/uploads/Frame_37f3952532.svg"
+                  alt=""
+                />
+              </div>
+              <h3 className="text-lg font-semibold text-red-800 mb-2">
+                Vision
+              </h3>
+              <p className="text-gray-700 text-sm">
+                The renowned modern patient-centered healthcare facility in an
+                atmosphere of trust, safety and comfort.
+              </p>
+            </div>
+            <div className="p-6 rounded-xl text-center bg-gray-50 w-1/2 min-h-[200px]">
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cms.thenairobihosp.org/uploads/mission_97f94cb17a.svg"
+                  alt=""
+                />
+              </div>
+              <h3 className="text-lg font-semibold text-red-800 mb-2">
+                Mission
+              </h3>
+              <p className="text-gray-700 text-sm">
+                To offer exceptional multi-specialty healthcare services by
+                harnessing innovative, dynamic & integrational patient-centered
+                strategies, towards achieving sustainable growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-8 max-w-7xl mx-auto">
+        <div className="flex justify-between items-center mt-11 w-full">
+          <div className="w-[50%]">
+            <h1 className="text-4xl font-medium font-serif text-left text-red-900">
+              Compassionate Care by Expert
+              <br />
+              Healthcare Professionals
+            </h1>
             <p className="text-gray-700 text-sm leading-relaxed mt-4">
               We take pride in our highly qualified professionals who deliver
               our mission every day, translating their knowledge and expertise
@@ -39,89 +86,88 @@ const About: FC<AboutProps> = () => {
               for our patients and their families.
             </p>
           </div>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6 mb-12 ">
-          <div className="p-6 border rounded-xl text-center bg-red-50  dark:border-gray-700 shadow-2xl                                                                                                        ">
-            <div className="flex items-center justify-center">
-              <img
-                src="https://cms.thenairobihosp.org/uploads/mission_97f94cb17a.svg"
-                alt=""
-              />
+          <div className="flex flex-col items-center justify-center w-[40%] bg-red-900 rounded-lg shadow-lg px-6 py-4 text-white">
+            <div className="p-4">
+              <h2 className="text-2xl font-medium font-serif mb-4">
+                What We value
+              </h2>
+              <ul className="text-gray-200 text-sm space-y-2 list-disc list-item">
+                <li>
+                  <strong>Dedication:</strong> Efficient service and great value
+                  for patients and families.
+                </li>
+                <li>
+                  <strong>Empathy:</strong> Warm, friendly, and caring
+                  environment for recovery.
+                </li>
+                <li>
+                  <strong>Inspiration:</strong> Empowering staff to achieve
+                  extraordinary goals and careers.
+                </li>
+                <li>
+                  <strong>Quality:</strong> Superior performance and quality to
+                  strengthen the hospital’s core.
+                </li>
+                <li>
+                  <strong>Partnerships:</strong> Strong internal and external
+                  collaborations.
+                </li>
+                <li>
+                  <strong>Integrity & Accountability:</strong> Honoring
+                  commitments under high accountability.
+                </li>
+              </ul>
             </div>
-            <h3 className="text-lg font-semibold text-red-800 mb-2">Mission</h3>
-            <p className="text-gray-700 text-sm">
-              To offer exceptional multi-specialty healthcare services by
-              harnessing innovative, dynamic & integrational patient-centered
-              strategies, towards achieving sustainable growth.
-            </p>
-          </div>
-          <div className="p-6 border rounded-xl text-center bg-red-50  dark:border-gray-700 shadow-2xl">
-            <div className="flex items-center justify-center">
-              <img
-                src="https://cms.thenairobihosp.org/uploads/Frame_37f3952532.svg"
-                alt=""
-              />
-            </div>
-            <h3 className="text-lg font-semibold text-red-800 mb-2">Vision</h3>
-            <p className="text-gray-700 text-sm">
-              The renowned modern patient-centered healthcare facility in an
-              atmosphere of trust, safety and comfort.
-            </p>
           </div>
         </div>
-
-        <div className="p-6 border rounded-xl mb-12 bg-red-50  dark:border-gray-700 shadow-2xl">
-          <div className="flex items-center justify-center ">
-            <img
-              src="https://cms.thenairobihosp.org/uploads/Frame_1_d771ee6a40.svg"
-              alt=""
-            />
+        <div className="">
+          <div className="flex items-center justify-between mt-11 w-full">
+            <div className="flex flex-col items-center justify-center mt-11 text-center">
+              <h2 className="text-5xl font-medium font-serif mb-4 text-red-900">
+                22+
+              </h2>
+              <p className="text-xl font-serif text-red-900">Specialists</p>
+            </div>
+            <div className="flex flex-col items-center justify-center mt-11 text-center text-red-900">
+              <h2 className="text-5xl font-medium font-serif mb-4">70+</h2>
+              <p className="text-xl font-serif">Healthcare Experience</p>
+            </div>
+            <div className="flex flex-col items-center justify-center mt-11 text-center text-red-900">
+              <h2 className="text-5xl font-medium font-serif mb-4">80%</h2>
+              <p className="text-xl font-serif">Patient Satisfaction</p>
+            </div>
+            <div className="flex flex-col items-center justify-center mt-11 text-center text-red-900">
+              <h2 className="text-5xl font-medium font-serif mb-4">40M+</h2>
+              <p className="text-xl font-serif">Patients Treated</p>
+            </div>
           </div>
-          <h3 className="text-lg font-semibold text-red-800 mb-4 text-center">
-            Values
-          </h3>
-          <ul className="text-gray-700 text-sm space-y-2 mb-6 text-center">
-            <li>
-              <strong>Dedication:</strong> Efficient service and great value for
-              patients and families.
-            </li>
-            <li>
-              <strong>Empathy:</strong> Warm, friendly, and caring environment
-              for recovery.
-            </li>
-            <li>
-              <strong>Inspiration:</strong> Empowering staff to achieve
-              extraordinary goals and careers.
-            </li>
-            <li>
-              <strong>Quality:</strong> Superior performance and quality to
-              strengthen the hospital’s core.
-            </li>
-            <li>
-              <strong>Partnerships:</strong> Strong internal and external
-              collaborations.
-            </li>
-            <li>
-              <strong>Integrity & Accountability:</strong> Honoring commitments
-              under high accountability.
-            </li>
-          </ul>
-
-          <h3 className="text-lg font-semibold text-red-800 mb-4 text-center">
-            Our Quality Statements
-          </h3>
-          <ul className="text-gray-700 text-sm space-y-1 text-center">
-            <li>Energy Management Policy Statement</li>
-            <li>Environmental Policy Statement</li>
-            <li>Food Safety Policy Statement</li>
-            <li>Fire Safety Policy Statement</li>
-            <li>Quality Policy Statement</li>
-            <li>Occupational Safety and Health Policy Statement</li>
-          </ul>
         </div>
       </div>
-      <Footer />
+      <Opc />
+      <TestimonialCarousel testimonials={[
+        {
+          name: "Sarah Johnson",
+          title: "Patient",
+          image: "/assets/testimonials/sarah-johnson.jpg",
+          quote: "The cardiology team at The Nairobi Hospital saved my life. Their care and expertise are unmatched.",
+        },
+        {
+          name: "John Smith",
+          title: "Patient",
+          image: "/assets/testimonials/john-smith.jpg",
+          quote: "I am grateful for the exceptional care I received from the cardiology team.",
+        },
+      ]} />
+      <InsuranceSlider />
+      <ContactForm contactInfo={{
+                    phone: "+254 703 082 000",
+                    emails: [
+                      { type: "general", address: "hosp@nbihosp.org" },
+                      { type: "medical", address: "medicalenquiries@nbihosp.org" },
+                      { type: "service", address: "customer.service@nbihosp.org" },
+                      { type: "clinic", address: "clinic@nbihosp.org" },
+                    ],
+                  }} />
     </>
   );
 };

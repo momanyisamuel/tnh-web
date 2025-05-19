@@ -1,5 +1,3 @@
-import Footer from "@/components/footer";
-import Navbar from "@/components/Navbar";
 import { FC } from "react";
 import TeamPage from "./TeamPage";
 
@@ -200,14 +198,12 @@ export const teamMembers: TeamMember[] = [
 const SeniorManagement: FC<TeamPageProps> = () => {
   return (
     <>
-      <Navbar />
       {/* <NavigationTabs /> */}
       <TeamPage
         title="Senior Management Team"
         description=""
         members={teamMembers}
       />
-      <Footer />
     </>
   );
 };
